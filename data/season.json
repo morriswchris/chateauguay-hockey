@@ -4,225 +4,378 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": null,
+  "updated": "2026-09-20T20:04:17Z",
   "schedule": [
     {
       "week": "1",
-      "date": "Wed, Sept 9, 2026",
+      "date": "Wed, Sep 9, 2026",
       "iso": "2026-09-09",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "2",
-      "date": "Wed, Sept 16, 2026",
+      "date": "Wed, Sep 16, 2026",
       "iso": "2026-09-16",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "3",
-      "date": "Wed, Sept 23, 2026",
+      "date": "Wed, Sep 23, 2026",
       "iso": "2026-09-23",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "4",
-      "date": "Wed, Sept 30, 2026",
+      "date": "Wed, Sep 30, 2026",
       "iso": "2026-09-30",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "5",
       "date": "Wed, Oct 7, 2026",
       "iso": "2026-10-07",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "6",
       "date": "Wed, Oct 14, 2026",
       "iso": "2026-10-14",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "7",
       "date": "Wed, Oct 21, 2026",
       "iso": "2026-10-21",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "8",
       "date": "Wed, Oct 28, 2026",
       "iso": "2026-10-28",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "9",
       "date": "Wed, Nov 4, 2026",
       "iso": "2026-11-04",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "10",
       "date": "Wed, Nov 11, 2026",
       "iso": "2026-11-11",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "11",
       "date": "Wed, Nov 18, 2026",
       "iso": "2026-11-18",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "12",
       "date": "Wed, Nov 25, 2026",
       "iso": "2026-11-25",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "13",
       "date": "Wed, Dec 2, 2026",
       "iso": "2026-12-02",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "14",
       "date": "Wed, Dec 9, 2026",
       "iso": "2026-12-09",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "15",
       "date": "Wed, Dec 16, 2026",
       "iso": "2026-12-16",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "—",
       "date": "Wed, Dec 23, 2026",
       "iso": "2026-12-23",
       "time": "NO GAME",
-      "rink": "—"
+      "rink": "—",
+      "note": ""
     },
     {
       "week": "—",
       "date": "Wed, Dec 30, 2026",
       "iso": "2026-12-30",
       "time": "NO GAME",
-      "rink": "—"
+      "rink": "—",
+      "note": ""
     },
     {
       "week": "16",
       "date": "Wed, Jan 6, 2027",
       "iso": "2027-01-06",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "17",
       "date": "Wed, Jan 13, 2027",
       "iso": "2027-01-13",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "18",
       "date": "Wed, Jan 20, 2027",
       "iso": "2027-01-20",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "19",
       "date": "Wed, Jan 27, 2027",
       "iso": "2027-01-27",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "20",
       "date": "Wed, Feb 3, 2027",
       "iso": "2027-02-03",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "21",
       "date": "Wed, Feb 10, 2027",
       "iso": "2027-02-10",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "22",
       "date": "Wed, Feb 17, 2027",
       "iso": "2027-02-17",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "23",
       "date": "Wed, Feb 24, 2027",
       "iso": "2027-02-24",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "—",
       "date": "Wed, Mar 3, 2027",
       "iso": "2027-03-03",
       "time": "NO GAME",
-      "rink": "—"
+      "rink": "—",
+      "note": ""
     },
     {
       "week": "24",
       "date": "Wed, Mar 10, 2027",
       "iso": "2027-03-10",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "25",
       "date": "Wed, Mar 17, 2027",
       "iso": "2027-03-17",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "26",
       "date": "Wed, Mar 24, 2027",
       "iso": "2027-03-24",
       "time": "19:45–21:15",
-      "rink": "Kim St-Pierre"
+      "rink": "Kim St-Pierre",
+      "note": ""
     },
     {
       "week": "27",
       "date": "Wed, Mar 31, 2027",
       "iso": "2027-03-31",
       "time": "19:45–21:15",
-      "rink": "Guy Scott"
+      "rink": "Guy Scott",
+      "note": ""
     },
     {
       "week": "28",
       "date": "Wed, Apr 7, 2027",
       "iso": "2027-04-07",
       "time": "19:45–21:15",
-      "rink": "Guy Scott"
+      "rink": "Guy Scott",
+      "note": ""
     }
   ],
-  "games": []
+  "games": [
+    {
+      "date": "Wed, Sep 9, 2026",
+      "iso": "2026-09-09",
+      "stats": [
+        {
+          "player": "Andy Skobin",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Arune Paul",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Bart Goodleaf",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Ben Levesque",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Carter Howell",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Danny Martinez",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Francis Chenevert",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Jarret Butler",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "John White",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Kevin Donnely",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Lorne Lucas",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Marc Levesque",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Mark Lucas",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Mark Massel",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Matieu Rheault",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Nick Montour",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Patrick Robertson",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Scott Howell",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Shane Ford",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Shawn Blenman",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Stephane Goyette",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Steve Diabo",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Travis McCumber",
+          "g": 0,
+          "a": 0
+        }
+      ]
+    }
+  ]
 }
