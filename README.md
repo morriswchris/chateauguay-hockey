@@ -71,9 +71,10 @@ the stats dates):
 
 ## Updating the site
 
-- **Automatic:** the sync runs daily at **11am and noon US Eastern**
-  (16:00 & 17:00 UTC, so it lands at noon Eastern year-round despite DST). It
-  commits only when the numbers changed, so unchanged days cause no redeploy.
+- **Automatic:** the sync runs once daily at **16:00 UTC** — 11am US Eastern in
+  winter (EST) / 12pm in summer (EDT). GitHub cron is UTC-only, so the
+  wall-clock time shifts by an hour across daylight saving. It commits only
+  when the numbers changed, so unchanged days cause no redeploy.
 - **On demand:** `Actions → Sync stats from Google Sheet → Run workflow` pulls
   immediately after you finish entering a game.
 

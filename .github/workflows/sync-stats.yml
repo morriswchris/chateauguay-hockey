@@ -13,9 +13,10 @@ name: Sync stats from Google Sheet
 on:
   workflow_dispatch:        # "Run workflow" button for an instant refresh
   schedule:
-    # 16:00 & 17:00 UTC = 11am & 12pm US Eastern year-round (covers DST).
+    # Once daily at 16:00 UTC — 11am US Eastern in winter (EST) / 12pm in
+    # summer (EDT). GitHub cron is UTC-only, so the wall-clock time shifts by
+    # an hour across daylight saving; that's expected.
     - cron: '0 16 * * *'
-    - cron: '0 17 * * *'
 
 permissions:
   contents: write
