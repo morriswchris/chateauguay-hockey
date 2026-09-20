@@ -1,12 +1,18 @@
 name: Deploy to GitHub Pages
 
-# Every push to the default branch (including the auto-commits made by the
-# stats editor) rebuilds and redeploys the site. No build step is needed —
-# the repository root is a static site.
+# Rebuilds and redeploys the site (the repo root is a static site, no build
+# step needed). Runs on:
+#   - push to master (human merges), and
+#   - completion of the stats sync — a commit made by that workflow's
+#     GITHUB_TOKEN does NOT trigger `on: push`, so we listen for the workflow
+#     itself finishing instead.
 on:
   push:
     branches: [master]
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Sync stats from Google Sheet"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -21,6 +27,9 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # On workflow_run, only deploy if the sync succeeded; always deploy on
+    # a direct push or manual dispatch.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
