@@ -1,0 +1,56 @@
+name: Sync stats from Google Sheet
+
+# Pulls the Google Sheet(s), rebuilds data/season.json, and commits it only
+# when the numbers actually changed. That commit triggers the Pages deploy
+# workflow, so the live site updates on its own.
+#
+# Setup (one time): publish each sheet tab via File -> Share -> Publish to web
+# -> CSV, then add the URLs as repository *Variables* (Settings -> Secrets and
+# variables -> Actions -> Variables):
+#   STATS_CSV_URL     (required)  columns: Date, Player, Goals, Assists
+#   SCHEDULE_CSV_URL  (optional)  columns: Date, Time, Rink [, Week, Note]
+
+on:
+  workflow_dispatch:        # "Run workflow" button for an instant refresh
+  schedule:
+    # 16:00 & 17:00 UTC = 11am & 12pm US Eastern year-round (covers DST).
+    - cron: '0 16 * * *'
+    - cron: '0 17 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-stats
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build season.json from the sheet
+        env:
+          STATS_CSV_URL: ${{ vars.STATS_CSV_URL }}
+          SCHEDULE_CSV_URL: ${{ vars.SCHEDULE_CSV_URL }}
+        run: python scripts/build_season.py
+
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain data/season.json)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/season.json
+            git commit -m "Sync stats from Google Sheet"
+            git push
+            echo "Committed updated stats."
+          else
+            echo "No changes — nothing to commit."
+          fi

@@ -41,7 +41,6 @@ body{
   color:white;text-decoration:none;font-weight:800;padding:16px 22px;display:block;border-right:1px solid rgba(255,255,255,.09)
 }
 .nav a:first-child{background:linear-gradient(#ef2424,#ba0f15)}
-.nav a.admin-link{margin-left:auto;border-right:none;background:linear-gradient(#0e7a3a,#0a5a2b)}
 .main{max-width:1560px;margin:16px auto 0;padding:0 14px 35px}
 .top-grid{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:14px}
 .panel{
@@ -53,7 +52,6 @@ body{
   font-size:21px;font-weight:900;text-transform:uppercase
 }
 .panel-head.red{background:linear-gradient(#ef2026,#bd0c13)}
-.panel-head.green{background:linear-gradient(#0e7a3a,#0a5a2b)}
 .panel-body{padding:14px}
 .next-game{display:grid;grid-template-columns:110px 1fr;gap:15px;align-items:center}
 .date-box{
@@ -64,11 +62,7 @@ body{
 .date-box .num{font-size:48px;color:#d31318;font-weight:900;line-height:1}
 .date-box .year{font-weight:800;padding-bottom:10px}
 .game-details strong{font-size:22px;display:block;margin:7px 0}
-.btn{display:inline-block;background:linear-gradient(#ef2226,#ba0d12);color:white;font-weight:900;padding:10px 18px;border-radius:7px;text-decoration:none;margin-top:14px;border:none;cursor:pointer;font-size:15px}
-.btn:disabled{opacity:.5;cursor:not-allowed}
-.btn.blue{background:linear-gradient(#0f66b3,#0a4a85)}
-.btn.green{background:linear-gradient(#0e7a3a,#0a5a2b)}
-.btn.ghost{background:linear-gradient(#5a6b78,#3f4c56)}
+.btn{display:inline-block;background:linear-gradient(#ef2226,#ba0d12);color:white;font-weight:900;padding:10px 18px;border-radius:7px;text-decoration:none;margin-top:14px}
 .news-item{display:grid;grid-template-columns:72px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid #ccd8df}
 .news-thumb{height:52px;border-radius:5px;background:linear-gradient(135deg,#1a5f90,#0b2a46);display:grid;place-items:center;color:white;font-weight:900}
 .news-item h4{margin:0 0 3px;font-size:16px} .news-item p{margin:0;font-size:13px;color:#385167}
@@ -95,31 +89,6 @@ tr.no-game td{background:#ffe4e4;color:#a30d13;font-weight:800}
 }
 .footer strong{color:white}
 .footer a{color:#9fd0f2}
-
-/* ---- Admin / stats-entry editor ---- */
-.field{margin:10px 0}
-.field label{display:block;font-weight:800;margin-bottom:4px;font-size:14px}
-.field input,.field select{
-  width:100%;padding:9px 10px;border:1px solid #7da0b8;border-radius:7px;font-size:15px;background:white
-}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.hint{font-size:12px;color:#4a6076;margin:4px 0 0}
-.entry-table th,.entry-table td{text-align:left}
-.entry-table td.num,.entry-table th.num{text-align:center;width:88px}
-.entry-table input[type=number]{width:70px;padding:6px;border:1px solid #7da0b8;border-radius:6px;text-align:center;font-size:14px}
-.entry-table input[type=checkbox]{width:18px;height:18px}
-.entry-table tr.played td{background:#eafaef}
-.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:6px}
-.status{margin:12px 0;padding:11px 14px;border-radius:8px;font-weight:700;font-size:14px;display:none}
-.status.show{display:block}
-.status.ok{background:#e6f7ec;color:#0a5a2b;border:1px solid #8ed0a5}
-.status.err{background:#fdeaea;color:#a30d13;border:1px solid #e6a2a5}
-.status.info{background:#e9f2fb;color:#0a4a85;border:1px solid #a7c8e8}
-details.help{margin:10px 0;background:#eef5f9;border:1px solid #c6d3dc;border-radius:8px;padding:10px 14px}
-details.help summary{font-weight:800;cursor:pointer}
-details.help p,details.help li{font-size:13px;line-height:1.5}
-code{background:#e3edf3;padding:1px 5px;border-radius:4px;font-size:12px}
-.json-out{width:100%;min-height:160px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;padding:10px;border:1px solid #7da0b8;border-radius:8px;white-space:pre;overflow:auto}
 @media(max-width:950px){
   .top-grid,.content-grid{grid-template-columns:1fr}
   .hero-inner{align-items:flex-start}
@@ -130,9 +99,7 @@ code{background:#e3edf3;padding:1px 5px;border-radius:4px;font-size:12px}
   .logo-img{max-width:180px}
   .nav-inner{justify-content:center}
   .nav a{padding:12px 14px;font-size:13px}
-  .nav a.admin-link{margin-left:0}
   .leader-grid{grid-template-columns:1fr}
   .next-game{grid-template-columns:95px 1fr}
   .roster{grid-template-columns:1fr}
-  .row2{grid-template-columns:1fr}
 }

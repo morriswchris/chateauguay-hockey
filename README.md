@@ -1,60 +1,81 @@
 # Chateauguay Adult Hockey League (CAHL)
 
 A no-backend, GitHub Pages website for the CAHL. It shows the season schedule,
-player statistics and league leaders, and includes a built-in editor for
-entering weekly game stats — all without a server.
+player statistics and league leaders. Stats are entered in a **Google Sheet**;
+a GitHub Action pulls the sheet, rebuilds the site's data file, and the site
+redeploys automatically. No server, no login, no tokens on the site.
 
 ## Live site
 
-Once GitHub Pages is enabled, the site is served at:
-
-- **Site:** `https://<owner>.github.io/chateauguay-hockey/`
-- **Stats editor:** `https://<owner>.github.io/chateauguay-hockey/admin.html`
+Once GitHub Pages is enabled: `https://<owner>.github.io/chateauguay-hockey/`
 
 ## How it works
 
-Everything is static. The single source of truth is [`data/season.json`](data/season.json):
-
 ```
-index.html        Public site (schedule, stats, leaders, next game)
-admin.html        Weekly stats entry editor
-assets/
-  app.css         Styles
-  data.js         Shared data loading + aggregation
-  site.js         Public page rendering
-  admin.js        Editor logic (form, download, GitHub publish)
-  logo.png        CAHL logo
-data/season.json  Players, schedule and weekly game stats
+Google Sheet ──(Publish to web: CSV)──► GitHub Action (sync-stats.yml)
+                                              │ rebuilds data/season.json
+                                              ▼
+                                        commit ──► Pages deploy ──► live site
 ```
 
-- The public page reads `data/season.json`, rolls each week's stat lines up
-  into per-player totals (GP / Goals / Assists / Points), ranks them, and
-  highlights the next upcoming game automatically from today's date.
-- The **stats editor** (`admin.html`) lets you pick a week, mark who played,
-  and enter goals and assists. It then either publishes the updated
-  `data/season.json` directly to GitHub or lets you download it to commit.
+- The public page (`index.html`) reads [`data/season.json`](data/season.json),
+  groups stat lines by game date, computes each player's GP / Goals / Assists /
+  Points, ranks them, shows the league leaders, and auto-highlights the next
+  upcoming game from today's date.
+- `data/season.json` is **generated** — you don't edit it by hand. It's rebuilt
+  from the Google Sheet by [`scripts/build_season.py`](scripts/build_season.py).
 
-## Entering weekly stats
+```
+index.html                     Public site
+assets/{app.css,data.js,site.js,logo.png}   Styles, data helpers, rendering, logo
+data/season.json               Generated data (schedule + games)
+scripts/build_season.py        Sheet CSV -> season.json
+.github/workflows/sync-stats.yml   Pull sheet + commit (scheduled + manual)
+.github/workflows/deploy.yml       Deploy to GitHub Pages on push to master
+```
 
-1. Open `admin.html`.
-2. Choose the game week and enter each player's goals/assists.
-3. Click **Apply week to season**.
-4. Publish one of two ways:
-   - **Publish to GitHub** (recommended, automated): paste a fine-grained
-     personal access token with **Contents: Read and write** on this repo.
-     Committing `data/season.json` triggers the deploy workflow and the live
-     site updates in a minute or two. The token is stored only in your browser.
-   - **Download season.json**: commit the downloaded file to `data/season.json`
-     yourself.
+## Entering stats (Google Sheet)
 
-## Deployment (automated)
+The **Stats** sheet uses one row per player per game. `Player` is free text —
+the roster and all totals are computed from whoever appears here:
 
-`.github/workflows/deploy.yml` deploys the repository root to GitHub Pages on
-every push to `master`. To turn it on once:
+| Date | Player | Goals | Assists |
+|------|--------|-------|---------|
+| 2026-09-09 | Mark Lucas | 2 | 1 |
+| 2026-09-09 | Ben Levesque | 3 | 0 |
+| 2026-09-16 | Mark Lucas | 1 | 3 |
 
-1. Push this repo to GitHub.
-2. In the repo, go to **Settings → Pages → Build and deployment** and set
-   **Source: GitHub Actions**.
+Dates can be `2026-09-09`, `9/9/2026`, or `Sept 9, 2026` — all are understood
+and games are grouped by date.
 
-After that, every stats update — whether committed by hand or published from
-the editor — redeploys the site automatically.
+The **Schedule** is an optional, independent sheet (it does not need to match
+the stats dates):
+
+| Week | Date | Time | Rink |
+|------|------|------|------|
+| 1 | 2026-09-09 | 19:45–21:15 | Kim St-Pierre |
+
+## One-time setup
+
+1. **Publish the sheet(s) as CSV**: in Google Sheets, `File → Share →
+   Publish to web`, pick the tab, choose **CSV**, and copy the URL. Do this for
+   the Stats tab (and the Schedule tab if you use one). Publishing exposes only
+   *read* access to that data — edit access stays private to whoever you share
+   the sheet with, which is your access control.
+2. **Add the URLs as repository Variables** (not secrets):
+   `Settings → Secrets and variables → Actions → Variables`:
+   - `STATS_CSV_URL` — required
+   - `SCHEDULE_CSV_URL` — optional (omit to keep the schedule in `season.json`)
+3. **Enable Pages**: `Settings → Pages → Build and deployment → Source: GitHub
+   Actions`.
+
+## Updating the site
+
+- **Automatic:** the sync runs daily at **11am and noon US Eastern**
+  (16:00 & 17:00 UTC, so it lands at noon Eastern year-round despite DST). It
+  commits only when the numbers changed, so unchanged days cause no redeploy.
+- **On demand:** `Actions → Sync stats from Google Sheet → Run workflow` pulls
+  immediately after you finish entering a game.
+
+To change the cadence, edit the `cron` lines in
+[`.github/workflows/sync-stats.yml`](.github/workflows/sync-stats.yml).

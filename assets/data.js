@@ -1,12 +1,13 @@
-/* Shared data helpers for the CAHL site (public + admin).
-   No backend: the season data lives in data/season.json in the repo. */
+/* Shared data helpers for the CAHL site.
+   No backend: data/season.json is generated from a Google Sheet by
+   .github/workflows/sync-stats.yml. Games are keyed by date; the roster
+   and all totals are computed from whatever players appear in the sheet. */
 (function (global) {
   'use strict';
 
   var DATA_PATH = 'data/season.json';
 
-  // Fetch the season file. Cache-busted so freshly-committed updates show up
-  // as soon as GitHub Pages serves them.
+  // Fetch the season file, cache-busted so fresh syncs show up immediately.
   function loadSeason() {
     return fetch(DATA_PATH + '?t=' + Date.now(), { cache: 'no-store' })
       .then(function (r) {
@@ -15,19 +16,17 @@
       });
   }
 
-  // Roll every week's stat lines up into per-player totals.
-  // GP = number of weeks a player has a stat line (i.e. played).
+  // Roll every game's stat lines up into per-player totals.
+  // Roster is derived from the players who appear in the games (Player is a
+  // free-text string in the sheet). GP = number of games a player appears in.
   function aggregate(season) {
     var totals = {};
-    (season.players || []).forEach(function (p) {
-      totals[p.name] = { name: p.name, number: p.number || null, gp: 0, g: 0, a: 0 };
-    });
-    (season.weeks || []).forEach(function (w) {
-      (w.stats || []).forEach(function (s) {
-        if (!totals[s.player]) {
-          totals[s.player] = { name: s.player, number: null, gp: 0, g: 0, a: 0 };
-        }
-        var t = totals[s.player];
+    (season.games || []).forEach(function (g) {
+      (g.stats || []).forEach(function (s) {
+        var name = (s.player || '').trim();
+        if (!name) return;
+        if (!totals[name]) totals[name] = { name: name, gp: 0, g: 0, a: 0 };
+        var t = totals[name];
         t.gp += 1;
         t.g += Number(s.g) || 0;
         t.a += Number(s.a) || 0;

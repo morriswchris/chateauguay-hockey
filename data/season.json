@@ -3,77 +3,8 @@
   "league": "Chateauguay Adult Hockey League",
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
-  "players": [
-    {
-      "name": "Mark Lucas"
-    },
-    {
-      "name": "Lorne Lucas"
-    },
-    {
-      "name": "Mark Massel"
-    },
-    {
-      "name": "Scott Howell"
-    },
-    {
-      "name": "Matieu Rheault"
-    },
-    {
-      "name": "Carter Howell"
-    },
-    {
-      "name": "Marc Levesque"
-    },
-    {
-      "name": "Ben Levesque"
-    },
-    {
-      "name": "Francis Chenevert"
-    },
-    {
-      "name": "Jarret Butler"
-    },
-    {
-      "name": "Danny Martinez"
-    },
-    {
-      "name": "Steve Diabo"
-    },
-    {
-      "name": "Travis McCumber"
-    },
-    {
-      "name": "Shawn Blenman"
-    },
-    {
-      "name": "Kevin Donnely"
-    },
-    {
-      "name": "Nick Montour"
-    },
-    {
-      "name": "Andy Skobin"
-    },
-    {
-      "name": "Shane Ford"
-    },
-    {
-      "name": "Bart Goodleaf"
-    },
-    {
-      "name": "Stephane Goyette"
-    },
-    {
-      "name": "Arune Paul"
-    },
-    {
-      "name": "John White"
-    },
-    {
-      "name": "Patrick Robertson"
-    }
-  ],
+  "source": "google-sheet",
+  "updated": null,
   "schedule": [
     {
       "week": "1",
@@ -293,5 +224,5 @@
       "rink": "Guy Scott"
     }
   ],
-  "weeks": []
+  "games": []
 }
