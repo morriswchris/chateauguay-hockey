@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-09-20T20:04:17Z",
+  "updated": "2026-09-20T20:17:09Z",
   "schedule": [
     {
       "week": "1",
@@ -312,7 +312,7 @@
         },
         {
           "player": "Lorne Lucas",
-          "g": 0,
+          "g": 13,
           "a": 0
         },
         {
@@ -323,7 +323,7 @@
         {
           "player": "Mark Lucas",
           "g": 1,
-          "a": 0
+          "a": 1
         },
         {
           "player": "Mark Massel",
