@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAHL - Chateauguay Adult Hockey League</title>
+<meta name="description" content="Chateauguay Adult Hockey League — schedule, standings and player statistics for the 2026–2027 season.">
+<link rel="icon" href="assets/logo.png">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <img class="logo-img" src="assets/logo.png" alt="CAHL logo">
+    <div class="hero-title">
+      <h1>CHATEAUGUAY</h1>
+      <h2>ADULT HOCKEY LEAGUE</h2>
+      <div class="est">🏒 <span id="seasonLabel">CAHL • 2026–2027 SEASON</span></div>
+    </div>
+  </div>
+</section>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#home">HOME</a><a href="#news">NEWS</a><a href="#schedule">SCHEDULE</a><a href="#stats">STATISTICS</a><a class="admin-link" href="admin.html">✎ ENTER STATS</a>
+  </div>
+</nav>
+
+<main class="main">
+  <div class="top-grid">
+    <section class="panel">
+      <div class="panel-head red">Next Game</div>
+      <div class="panel-body next-game" id="nextGame">
+        <div class="date-box"><div class="day">—</div><div class="month">—</div><div class="num">—</div><div class="year">—</div></div>
+        <div class="game-details"><strong>Loading…</strong></div>
+      </div>
+    </section>
+
+    <section class="panel" id="news">
+      <div class="panel-head">League News</div>
+      <div class="panel-body">
+        <div class="news-item"><div class="news-thumb">CAHL</div><div><h4>Welcome to the 2026–2027 Season!</h4><p>Puck drops September 9th. Let’s have another great season of hockey, fun and friendship.</p></div></div>
+        <div class="news-item"><div class="news-thumb">RULES</div><div><h4>CAHL Rules &amp; Reminders</h4><p>Fair play • Respect • Have fun.</p></div></div>
+        <div class="news-item"><div class="news-thumb">🏆</div><div><h4>Weekly Updates</h4><p>News and statistics are updated throughout the season.</p></div></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">League Leaders</div>
+      <div class="panel-body leader-grid">
+        <div class="leader-card"><div class="title">GOALS</div><div class="sil"></div><div class="name" id="goalName">—</div><div class="stat" id="goalVal">0</div><small>GOALS</small></div>
+        <div class="leader-card"><div class="title">ASSISTS</div><div class="sil"></div><div class="name" id="assistName">—</div><div class="stat" id="assistVal">0</div><small>ASSISTS</small></div>
+        <div class="leader-card"><div class="title">POINTS</div><div class="sil"></div><div class="name" id="pointName">—</div><div class="stat" id="pointVal">0</div><small>POINTS</small></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="content-grid">
+    <section class="panel" id="schedule">
+      <div class="panel-head">Season Schedule</div>
+      <div class="table-wrap"><table><thead><tr><th>WK</th><th>DATE</th><th>TIME</th><th>RINK</th></tr></thead><tbody id="scheduleBody"></tbody></table></div>
+    </section>
+
+    <section class="panel" id="stats">
+      <div class="panel-head">Player Statistics</div>
+      <div class="table-wrap"><table><thead><tr><th>#</th><th>PLAYER</th><th>GP</th><th>GOALS</th><th>ASSISTS</th><th>POINTS</th></tr></thead><tbody id="statsBody"></tbody></table></div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <strong>SKILLS • FRIENDSHIP • COMPETITION • GOOD TIMES</strong><br>
+  CAHL • Chateauguay Adult Hockey League • <a href="admin.html">Enter weekly stats →</a>
+</footer>
+
+<script src="assets/data.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
