@@ -1,6 +1,6 @@
 /* Shared data helpers for the CAHL site.
    No backend: data/season.json is generated from a Google Sheet by
-   .github/workflows/sync-stats.yml. Games are keyed by date; the roster
+   .github/workflows/deploy.yml. Games are keyed by date; the roster
    and all totals are computed from whatever players appear in the sheet. */
 (function (global) {
   'use strict';

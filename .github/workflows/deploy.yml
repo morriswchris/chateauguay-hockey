@@ -1,21 +1,28 @@
-name: Deploy to GitHub Pages
+name: Sync stats and deploy
 
-# Rebuilds and redeploys the site (the repo root is a static site, no build
-# step needed). Runs on:
-#   - push to master (human merges), and
-#   - completion of the stats sync — a commit made by that workflow's
-#     GITHUB_TOKEN does NOT trigger `on: push`, so we listen for the workflow
-#     itself finishing instead.
+# One sequential pipeline: pull the Google Sheet -> rebuild data/season.json
+# -> build & deploy the site from that fresh data. Because it all runs in a
+# single job, the deploy always uses the just-synced data (no double deploy,
+# no ordering race).
+#
+# Setup (one time): publish each sheet tab via File -> Share -> Publish to web
+# -> CSV, then add the URLs as repository *Variables* (Settings -> Secrets and
+# variables -> Actions -> Variables):
+#   STATS_CSV_URL     (required)  columns: Date, Player, Goals, Assists
+#   SCHEDULE_CSV_URL  (optional)  columns: Date, Time, Rink [, Week, Note]
+
 on:
   push:
-    branches: [master]
-  workflow_dispatch:
-  workflow_run:
-    workflows: ["Sync stats from Google Sheet"]
-    types: [completed]
+    branches: [master]      # every merge refreshes from the sheet and redeploys
+  workflow_dispatch:        # "Run workflow" button for an instant refresh
+  schedule:
+    # Once daily at 16:00 UTC — 11am US Eastern in winter (EST) / 12pm in
+    # summer (EDT). GitHub cron is UTC-only, so the wall-clock time shifts by
+    # an hour across daylight saving; that's expected.
+    - cron: '0 16 * * *'
 
 permissions:
-  contents: read
+  contents: write           # to commit the refreshed season.json
   pages: write
   id-token: write
 
@@ -25,17 +32,42 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
-    # On workflow_run, only deploy if the sync succeeded; always deploy on
-    # a direct push or manual dispatch.
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Sync season.json from the Google Sheet
+        env:
+          STATS_CSV_URL: ${{ vars.STATS_CSV_URL }}
+          SCHEDULE_CSV_URL: ${{ vars.SCHEDULE_CSV_URL }}
+        run: python scripts/build_season.py
+
+      # Persist the refreshed data for history / source of truth. The deploy
+      # below uses the working tree either way, so a push hiccup never blocks
+      # publishing.
+      - name: Commit refreshed data (if changed)
+        continue-on-error: true
+        run: |
+          if [ -n "$(git status --porcelain data/season.json)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/season.json
+            git commit -m "Sync stats from Google Sheet"
+            git push
+            echo "Committed refreshed stats."
+          else
+            echo "No data changes."
+          fi
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

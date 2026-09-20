@@ -12,11 +12,15 @@ Once GitHub Pages is enabled: `https://<owner>.github.io/chateauguay-hockey/`
 ## How it works
 
 ```
-Google Sheet ──(Publish to web: CSV)──► GitHub Action (sync-stats.yml)
-                                              │ rebuilds data/season.json
+Google Sheet ──(Publish to web: CSV)──► GitHub Action (deploy.yml)
+                                              │ 1. rebuild data/season.json
+                                              │ 2. commit it (if changed)
                                               ▼
-                                        commit ──► Pages deploy ──► live site
+                                        3. build & deploy ──► live site
 ```
+
+One workflow runs those steps in order, so the site is always built from the
+freshly-synced data.
 
 - The public page (`index.html`) reads [`data/season.json`](data/season.json),
   groups stat lines by game date, computes each player's GP / Goals / Assists /
@@ -30,8 +34,7 @@ index.html                     Public site
 assets/{app.css,data.js,site.js,logo.png}   Styles, data helpers, rendering, logo
 data/season.json               Generated data (schedule + games)
 scripts/build_season.py        Sheet CSV -> season.json
-.github/workflows/sync-stats.yml   Pull sheet + commit (scheduled + manual)
-.github/workflows/deploy.yml       Deploy to GitHub Pages on push to master
+.github/workflows/deploy.yml   Sync the sheet, then build & deploy (one pipeline)
 ```
 
 ## Entering stats (Google Sheet)
@@ -78,11 +81,11 @@ rebuilds `data/season.json`, and (when it changed) redeploys:
   (EST) / 12pm in summer (EDT). GitHub cron is UTC-only, so the wall-clock time
   shifts by an hour across daylight saving.
 - **On every merge to `master`:** any push rebuilds from the current sheet.
-- **On demand:** `Actions → Sync stats from Google Sheet → Run workflow` pulls
+- **On demand:** `Actions → Sync stats and deploy → Run workflow` publishes
   immediately after you finish entering a game.
 
-The sync commits only when the numbers changed, so unchanged runs don't create
-commits.
+The refreshed `season.json` is committed only when the numbers changed, so
+unchanged runs don't create commits (the site is still rebuilt and redeployed).
 
-To change the cadence, edit the `cron` lines in
-[`.github/workflows/sync-stats.yml`](.github/workflows/sync-stats.yml).
+To change the cadence, edit the `cron` line in
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
