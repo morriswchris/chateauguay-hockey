@@ -12,6 +12,8 @@ name: Sync stats from Google Sheet
 
 on:
   workflow_dispatch:        # "Run workflow" button for an instant refresh
+  push:
+    branches: [master]      # every merge to master re-pulls the sheet
   schedule:
     # Once daily at 16:00 UTC — 11am US Eastern in winter (EST) / 12pm in
     # summer (EDT). GitHub cron is UTC-only, so the wall-clock time shifts by

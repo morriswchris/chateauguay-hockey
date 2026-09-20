@@ -71,12 +71,18 @@ the stats dates):
 
 ## Updating the site
 
-- **Automatic:** the sync runs once daily at **16:00 UTC** — 11am US Eastern in
-  winter (EST) / 12pm in summer (EDT). GitHub cron is UTC-only, so the
-  wall-clock time shifts by an hour across daylight saving. It commits only
-  when the numbers changed, so unchanged days cause no redeploy.
+The site refreshes from the sheet on any of these — each re-pulls the sheet,
+rebuilds `data/season.json`, and (when it changed) redeploys:
+
+- **Every 24 hours:** once daily at **16:00 UTC** — 11am US Eastern in winter
+  (EST) / 12pm in summer (EDT). GitHub cron is UTC-only, so the wall-clock time
+  shifts by an hour across daylight saving.
+- **On every merge to `master`:** any push rebuilds from the current sheet.
 - **On demand:** `Actions → Sync stats from Google Sheet → Run workflow` pulls
   immediately after you finish entering a game.
+
+The sync commits only when the numbers changed, so unchanged runs don't create
+commits.
 
 To change the cadence, edit the `cron` lines in
 [`.github/workflows/sync-stats.yml`](.github/workflows/sync-stats.yml).
