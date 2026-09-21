@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-09-20T20:17:09Z",
+  "updated": "2026-09-21T14:03:16Z",
   "schedule": [
     {
       "week": "1",
@@ -263,42 +263,42 @@
         {
           "player": "Andy Skobin",
           "g": 0,
-          "a": 0
+          "a": 3
         },
         {
           "player": "Arune Paul",
-          "g": 0,
-          "a": 0
+          "g": 1,
+          "a": 3
         },
         {
           "player": "Bart Goodleaf",
           "g": 0,
-          "a": 0
+          "a": 4
         },
         {
           "player": "Ben Levesque",
-          "g": 0,
-          "a": 0
+          "g": 10,
+          "a": 6
         },
         {
           "player": "Carter Howell",
-          "g": 0,
-          "a": 0
+          "g": 4,
+          "a": 1
         },
         {
           "player": "Danny Martinez",
           "g": 0,
-          "a": 0
+          "a": 2
         },
         {
           "player": "Francis Chenevert",
-          "g": 0,
-          "a": 0
+          "g": 3,
+          "a": 1
         },
         {
           "player": "Jarret Butler",
-          "g": 0,
-          "a": 0
+          "g": 2,
+          "a": 1
         },
         {
           "player": "John White",
@@ -307,38 +307,38 @@
         },
         {
           "player": "Kevin Donnely",
-          "g": 0,
-          "a": 0
-        },
-        {
-          "player": "Lorne Lucas",
-          "g": 13,
-          "a": 0
-        },
-        {
-          "player": "Marc Levesque",
-          "g": 0,
-          "a": 0
-        },
-        {
-          "player": "Mark Lucas",
-          "g": 1,
+          "g": 3,
           "a": 1
         },
         {
+          "player": "Lorne Lucas",
+          "g": 3,
+          "a": 8
+        },
+        {
+          "player": "Marc Levesque",
+          "g": 6,
+          "a": 5
+        },
+        {
+          "player": "Mark Lucas",
+          "g": 6,
+          "a": 4
+        },
+        {
           "player": "Mark Massel",
-          "g": 0,
-          "a": 0
+          "g": 2,
+          "a": 1
         },
         {
           "player": "Matieu Rheault",
-          "g": 0,
-          "a": 0
+          "g": 1,
+          "a": 3
         },
         {
           "player": "Nick Montour",
-          "g": 0,
-          "a": 0
+          "g": 2,
+          "a": 2
         },
         {
           "player": "Patrick Robertson",
@@ -348,32 +348,32 @@
         {
           "player": "Scott Howell",
           "g": 0,
-          "a": 0
+          "a": 6
         },
         {
           "player": "Shane Ford",
-          "g": 0,
-          "a": 0
+          "g": 4,
+          "a": 2
         },
         {
           "player": "Shawn Blenman",
-          "g": 0,
-          "a": 0
+          "g": 3,
+          "a": 1
         },
         {
           "player": "Stephane Goyette",
-          "g": 0,
-          "a": 0
+          "g": 2,
+          "a": 2
         },
         {
           "player": "Steve Diabo",
-          "g": 0,
-          "a": 0
+          "g": 2,
+          "a": 1
         },
         {
           "player": "Travis McCumber",
-          "g": 0,
-          "a": 0
+          "g": 1,
+          "a": 3
         }
       ]
     }
