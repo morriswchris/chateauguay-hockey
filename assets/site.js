@@ -63,28 +63,51 @@
   }
 
   var TOP_NEWS = 3;
-  var PREVIEW_CHARS = 150;
+  var TAG_MAX = 8;   // badge fits ~8 chars; longer tags are cut
 
   function dateLineHTML(n) {
     return n.date ? '<span class="news-date">' + esc(n.date) + '</span>' : '';
   }
 
-  // Card view: body truncated to a preview; long posts get a "Read more".
-  function newsCardHTML(n, idx) {
-    var body = n.body || '';
-    var long = body.length > PREVIEW_CHARS;
-    var preview = long ? body.slice(0, PREVIEW_CHARS).replace(/\s+\S*$/, '') + '…' : body;
-    var more = long ? '<button type="button" class="read-more" data-news-idx="' + idx + '">Read more →</button>' : '';
-    return '<div class="news-item"><div class="news-thumb">' + esc(n.tag || 'CAHL') + '</div>' +
-      '<div><h4>' + esc(n.title || '') + '</h4><p>' + esc(preview) + '</p>' +
-      more + dateLineHTML(n) + '</div></div>';
+  function tagShort(t) {
+    t = (t || 'CAHL').trim();
+    return t.length > TAG_MAX ? t.slice(0, TAG_MAX) : t;
+  }
+
+  // Card view: title truncates to one line (CSS), body is clamped to a fixed
+  // number of lines (CSS) and expands inline via the "View more" button.
+  function newsCardHTML(n) {
+    return '<div class="news-item"><div class="news-thumb">' + esc(tagShort(n.tag)) + '</div>' +
+      '<div class="news-content"><h4>' + esc(n.title || '') + '</h4>' +
+      '<p class="news-text">' + esc(n.body || '') + '</p>' +
+      '<button type="button" class="view-more" hidden></button>' +
+      dateLineHTML(n) + '</div></div>';
   }
 
   // Full view (modal): whole body, line breaks preserved.
   function newsFullHTML(n) {
     var body = esc(n.body || '').replace(/\n/g, '<br>');
-    return '<div class="news-item"><div class="news-thumb">' + esc(n.tag || 'CAHL') + '</div>' +
-      '<div><h4>' + esc(n.title || '') + '</h4><p>' + body + '</p>' + dateLineHTML(n) + '</div></div>';
+    return '<div class="news-item"><div class="news-thumb">' + esc(tagShort(n.tag)) + '</div>' +
+      '<div class="news-content"><h4>' + esc(n.title || '') + '</h4><p>' + body + '</p>' +
+      dateLineHTML(n) + '</div></div>';
+  }
+
+  // Reveal an inline "View more" only on cards whose body is actually clamped,
+  // and toggle expand/collapse.
+  function wireExpanders(container) {
+    container.querySelectorAll('.news-item').forEach(function (item) {
+      var text = item.querySelector('.news-text');
+      var btn = item.querySelector('.view-more');
+      if (!text || !btn) return;
+      if (text.scrollHeight - text.clientHeight > 2) {
+        btn.hidden = false;
+        btn.textContent = 'View more';
+        btn.addEventListener('click', function () {
+          var expanded = item.classList.toggle('expanded');
+          btn.textContent = expanded ? 'View less' : 'View more';
+        });
+      }
+    });
   }
 
   function renderNews(season) {
@@ -92,9 +115,8 @@
     if (!body) return;
     var items = CAHL.sortNews(season.news || []);
     if (!items.length) { body.innerHTML = '<p class="hint">No news yet.</p>'; return; }
-    body.innerHTML = items.slice(0, TOP_NEWS).map(function (n) {
-      return newsCardHTML(n, items.indexOf(n));
-    }).join('');
+    body.innerHTML = items.slice(0, TOP_NEWS).map(newsCardHTML).join('');
+    wireExpanders(body);
 
     var modal = document.getElementById('newsModal');
     var more = document.getElementById('newsMore');
@@ -104,9 +126,9 @@
     var closeBtn = document.getElementById('newsModalClose');
     var lastFocus = null;
 
-    function open(list, title) {
-      modalBody.innerHTML = list.map(newsFullHTML).join('');
-      titleEl.textContent = title || 'League News';
+    function open() {
+      modalBody.innerHTML = items.map(newsFullHTML).join('');
+      titleEl.textContent = 'League News';
       lastFocus = document.activeElement;
       modal.hidden = false;
       document.body.style.overflow = 'hidden';
@@ -122,13 +144,9 @@
     modal.querySelectorAll('[data-close]').forEach(function (el) { el.addEventListener('click', close); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) close(); });
 
-    // "Read more" on a single long post opens just that post.
-    body.addEventListener('click', function (e) {
-      var btn = e.target.closest('[data-news-idx]');
-      if (!btn) return;
-      var n = items[+btn.getAttribute('data-news-idx')];
-      if (n) open([n], n.title || 'League News');
-    });
+    // The "NEWS" nav link opens the full list in the modal.
+    var navNews = document.querySelector('.nav a[href="#news"]');
+    if (navNews) navNews.addEventListener('click', function (e) { e.preventDefault(); open(); });
 
     // "View all" opens the full list. The badge count reflects only current/
     // upcoming dated posts (today or later); pinned/evergreen posts and past
@@ -140,7 +158,7 @@
       }).length;
       more.hidden = false;
       more.textContent = upcoming ? 'View all news (' + upcoming + ') →' : 'View all news →';
-      more.addEventListener('click', function () { open(items, 'League News'); });
+      more.addEventListener('click', open);
     }
   }
 
