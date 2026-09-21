@@ -9,6 +9,7 @@ body{
 }
 .hero{
   min-height:270px;
+  padding-top:env(safe-area-inset-top,0);
   background:
     radial-gradient(circle at 75% 15%,rgba(255,255,255,.28),transparent 16%),
     linear-gradient(rgba(3,21,38,.35),rgba(3,21,38,.15)),

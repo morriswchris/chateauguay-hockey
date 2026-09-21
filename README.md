@@ -9,6 +9,19 @@ redeploys automatically. No server, no login, no tokens on the site.
 
 Once GitHub Pages is enabled: `https://<owner>.github.io/chateauguay-hockey/`
 
+## Install as an app (phone home screen)
+
+The site is a PWA, so it can be added to a phone's home screen and runs
+full-screen with the CAHL logo as its icon.
+
+- **iPhone (Safari):** Share → *Add to Home Screen*.
+- **Android (Chrome):** menu → *Install app* / *Add to Home screen*.
+
+A service worker ([`sw.js`](sw.js)) makes it work offline and is **network-first**,
+so each time you open it online it loads the latest data and pages automatically
+— no manual refresh, and no stale-app problem. `manifest.webmanifest` defines the
+name, colors and icons (`assets/icon-*.png`, generated from the logo).
+
 ## How it works
 
 ```
