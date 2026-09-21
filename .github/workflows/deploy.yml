@@ -10,6 +10,7 @@ name: Sync stats and deploy
 # variables -> Actions -> Variables):
 #   STATS_CSV_URL     (required)  columns: Date, Player, Goals, Assists
 #   SCHEDULE_CSV_URL  (optional)  columns: Date, Time, Rink [, Week, Note]
+#   NEWS_CSV_URL      (optional)  columns: Date, Tag, Title, Body  (blank date = pinned)
 
 on:
   push:

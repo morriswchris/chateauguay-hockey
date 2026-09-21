@@ -377,5 +377,31 @@
         }
       ]
     }
+  ],
+  "news": [
+    {
+      "date": "",
+      "iso": "",
+      "tag": "CAHL",
+      "title": "Welcome to the 2026–2027 Season!",
+      "body": "Puck drops September 9th. Let’s have another great season of hockey, fun and friendship.",
+      "pinned": true
+    },
+    {
+      "date": "",
+      "iso": "",
+      "tag": "RULES",
+      "title": "CAHL Rules & Reminders",
+      "body": "Fair play • Respect • Have fun.",
+      "pinned": true
+    },
+    {
+      "date": "",
+      "iso": "",
+      "tag": "🏆",
+      "title": "Weekly Updates",
+      "body": "News and statistics are updated throughout the season.",
+      "pinned": true
+    }
   ]
 }

@@ -58,6 +58,17 @@ the stats dates):
 |------|------|------|------|
 | 1 | 2026-09-09 | 19:45–21:15 | Kim St-Pierre |
 
+The **News** sheet is also optional. A row with **no date is pinned** to the top
+(evergreen items); dated rows are shown newest-first. `Tag` is the small badge.
+The site shows the top 3; a long post is truncated with a **Read more** link that
+opens the full text in a modal, and if there are more than 3 posts a **View all
+news** button opens the rest:
+
+| Date | Tag | Title | Body |
+|------|-----|-------|------|
+|  | CAHL | Welcome to the season! | Puck drops September 9th. |
+| 2026-09-10 | 🏆 | Week 1 Recap | Great opening night. |
+
 ## One-time setup
 
 1. **Publish the sheet(s) as CSV**: in Google Sheets, `File → Share →

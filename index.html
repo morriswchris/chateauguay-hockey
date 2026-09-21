@@ -39,9 +39,8 @@
     <section class="panel" id="news">
       <div class="panel-head">League News</div>
       <div class="panel-body">
-        <div class="news-item"><div class="news-thumb">CAHL</div><div><h4>Welcome to the 2026–2027 Season!</h4><p>Puck drops September 9th. Let’s have another great season of hockey, fun and friendship.</p></div></div>
-        <div class="news-item"><div class="news-thumb">RULES</div><div><h4>CAHL Rules &amp; Reminders</h4><p>Fair play • Respect • Have fun.</p></div></div>
-        <div class="news-item"><div class="news-thumb">🏆</div><div><h4>Weekly Updates</h4><p>News and statistics are updated throughout the season.</p></div></div>
+        <div id="newsBody"></div>
+        <button type="button" class="news-more" id="newsMore" hidden>View all news →</button>
       </div>
     </section>
 
@@ -72,6 +71,17 @@
   <strong>SKILLS • FRIENDSHIP • COMPETITION • GOOD TIMES</strong><br>
   CAHL • Chateauguay Adult Hockey League
 </footer>
+
+<div class="modal" id="newsModal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="newsModalTitle">
+    <div class="modal-head">
+      <h3 id="newsModalTitle">League News</h3>
+      <button type="button" class="modal-close" id="newsModalClose" aria-label="Close">×</button>
+    </div>
+    <div class="modal-body" id="newsModalBody"></div>
+  </div>
+</div>
 
 <script src="assets/data.js"></script>
 <script src="assets/site.js"></script>
