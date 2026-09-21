@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-09-21T14:46:15Z",
+  "updated": "2026-09-21T14:48:58Z",
   "schedule": [
     {
       "week": "1",
@@ -384,6 +384,127 @@
           "a": 3
         }
       ]
+    },
+    {
+      "date": "Wed, Sep 16, 2026",
+      "iso": "2026-09-16",
+      "stats": [
+        {
+          "player": "Andy Skobin",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Arune Paul",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Bart Goodleaf",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Ben Levesque",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Carter Howell",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Danny Martinez",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Francis Chenevert",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Jarret Butler",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "John White",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Kevin Donnely",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Lorne Lucas",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Marc Levesque",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Mark Lucas",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Mark Massel",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Matieu Rheault",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Nick Montour",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Patrick Robertson",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Scott Howell",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Shane Ford",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Shawn Blenman",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Stephane Goyette",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Steve Diabo",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Travis McCumber",
+          "g": 0,
+          "a": 0
+        }
+      ]
     }
   ],
   "news": [
@@ -410,22 +531,6 @@
       "title": "Weekly Updates",
       "body": "News and statistics are updated throughout the season.",
       "pinned": true
-    },
-    {
-      "date": "Mon, Sep 21, 2026",
-      "iso": "2026-09-21",
-      "tag": "GAME",
-      "title": "Game Night",
-      "body": "Always have time for hockey",
-      "pinned": false
-    },
-    {
-      "date": "Wed, Sep 16, 2026",
-      "iso": "2026-09-16",
-      "tag": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\n\nThe standard chunk of Lorem Ipsum used since 1966 is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham",
-      "title": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\n\nThe standard chunk of Lorem Ipsum used since 1966 is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham",
-      "body": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\n\nThe standard chunk of Lorem Ipsum used since 1966 is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham",
-      "pinned": false
     }
   ]
 }
