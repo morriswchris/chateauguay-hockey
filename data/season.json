@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-09-21T14:30:28Z",
+  "updated": "2026-09-21T14:46:15Z",
   "schedule": [
     {
       "week": "1",
@@ -384,17 +384,6 @@
           "a": 3
         }
       ]
-    },
-    {
-      "date": "Thu, Sep 10, 2026",
-      "iso": "2026-09-10",
-      "stats": [
-        {
-          "player": "Chris Morris",
-          "g": 20,
-          "a": 20
-        }
-      ]
     }
   ],
   "news": [
@@ -411,7 +400,7 @@
       "iso": "",
       "tag": "RULES",
       "title": "CAHL Rules & Reminders",
-      "body": "Fair play • Respect • Have fun.",
+      "body": "No Cry babies, No yelling at REF and if you are not having fun each week call 1-800-tuff-luck",
       "pinned": true
     },
     {
