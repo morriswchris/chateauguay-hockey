@@ -51,6 +51,7 @@ jobs:
         env:
           STATS_CSV_URL: ${{ vars.STATS_CSV_URL }}
           SCHEDULE_CSV_URL: ${{ vars.SCHEDULE_CSV_URL }}
+          NEWS_CSV_URL: ${{ vars.NEWS_CSV_URL }}
         run: python scripts/build_season.py
 
       # Persist the refreshed data for history / source of truth. The deploy
