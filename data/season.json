@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-09-21T14:03:16Z",
+  "updated": "2026-09-21T14:11:44Z",
   "schedule": [
     {
       "week": "1",
@@ -384,7 +384,7 @@
       "iso": "",
       "tag": "CAHL",
       "title": "Welcome to the 2026–2027 Season!",
-      "body": "Puck drops September 9th. Let’s have another great season of hockey, fun and friendship.",
+      "body": "Puck drops September 9th. Let's have another great season of hockey, fun and friendship.",
       "pinned": true
     },
     {
@@ -402,6 +402,22 @@
       "title": "Weekly Updates",
       "body": "News and statistics are updated throughout the season.",
       "pinned": true
+    },
+    {
+      "date": "Thu, Sep 16, 2027",
+      "iso": "2027-09-16",
+      "tag": "foo",
+      "title": "bar",
+      "body": "baz",
+      "pinned": false
+    },
+    {
+      "date": "Mon, Sep 21, 2026",
+      "iso": "2026-09-21",
+      "tag": "GAME",
+      "title": "Game Night",
+      "body": "Always have time for hockey",
+      "pinned": false
     }
   ]
 }
