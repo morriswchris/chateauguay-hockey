@@ -68,8 +68,11 @@ body{
 .news-item h4{margin:0 0 3px;font-size:16px} .news-item p{margin:0;font-size:13px;color:#385167}
 .news-item:last-child{border-bottom:none}
 .news-content{min-width:0}   /* allow the title/body to truncate within the grid column */
-/* Card (panel) truncation — the modal (#newsModalBody) shows full content. */
+/* Card (panel) truncation — the modal (#newsModalBody) shows full bodies. */
 #newsBody .news-item h4{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* Titles are headlines: clamp them even in the modal so a paragraph-length
+   title can't blow up the layout (the body below still shows in full). */
+#newsModalBody .news-item h4{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
 #newsBody .news-item.expanded h4{white-space:normal}
 #newsBody .news-item:not(.expanded) .news-text{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
 .news-date{display:block;margin-top:5px;font-size:11px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;color:#7c93a6}
