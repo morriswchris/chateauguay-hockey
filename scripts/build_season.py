@@ -145,15 +145,40 @@ def build_schedule(rows):
     return dated + undated
 
 
+def build_news(rows):
+    """News items. A row with no date is 'pinned' (evergreen, shown first);
+    dated rows are shown newest-first. Columns: Date, Tag, Title, Body."""
+    pinned, dated = [], []
+    for r in rows:
+        title = pick(r, "title", "headline", "heading")
+        body = pick(r, "body", "text", "content", "message", "story")
+        if not title and not body:
+            continue
+        d = parse_date(pick(r, "date", "posted", "day"))
+        item = {
+            "date": display_date(d, ""),
+            "iso": d.isoformat() if d else "",
+            "tag": pick(r, "tag", "label", "category", "badge"),
+            "title": title,
+            "body": body,
+            "pinned": not d,
+        }
+        (pinned if item["pinned"] else dated).append(item)
+    dated.sort(key=lambda x: x["iso"], reverse=True)
+    return pinned + dated
+
+
 def main():
     with open(SEASON_PATH, encoding="utf-8") as f:
         season = json.load(f)
 
     old_games = season.get("games", [])
     old_schedule = season.get("schedule", [])
+    old_news = season.get("news", [])
 
     stats_url = os.environ.get("STATS_CSV_URL", "").strip()
     sched_url = os.environ.get("SCHEDULE_CSV_URL", "").strip()
+    news_url = os.environ.get("NEWS_CSV_URL", "").strip()
 
     if stats_url:
         season["games"] = build_games(fetch_csv(stats_url))
@@ -168,11 +193,18 @@ def main():
         print("SCHEDULE_CSV_URL not set — keeping existing schedule (%d rows)."
               % len(old_schedule))
 
+    if news_url:
+        season["news"] = build_news(fetch_csv(news_url))
+        print("Loaded %d news item(s) from news sheet." % len(season["news"]))
+    else:
+        print("NEWS_CSV_URL not set — keeping existing news (%d items)." % len(old_news))
+
     season["source"] = "google-sheet"
 
     # Only bump the timestamp when the real content changed, so an unchanged
     # scheduled run leaves the file byte-identical and produces no commit.
-    changed = season["games"] != old_games or season["schedule"] != old_schedule
+    changed = (season["games"] != old_games or season["schedule"] != old_schedule
+               or season.get("news", []) != old_news)
     if changed:
         season["updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 

@@ -62,6 +62,82 @@
     }).join('');
   }
 
+  var TOP_NEWS = 3;
+  var PREVIEW_CHARS = 150;
+
+  function dateLineHTML(n) {
+    return n.date ? '<span class="news-date">' + esc(n.date) + '</span>' : '';
+  }
+
+  // Card view: body truncated to a preview; long posts get a "Read more".
+  function newsCardHTML(n, idx) {
+    var body = n.body || '';
+    var long = body.length > PREVIEW_CHARS;
+    var preview = long ? body.slice(0, PREVIEW_CHARS).replace(/\s+\S*$/, '') + '…' : body;
+    var more = long ? '<button type="button" class="read-more" data-news-idx="' + idx + '">Read more →</button>' : '';
+    return '<div class="news-item"><div class="news-thumb">' + esc(n.tag || 'CAHL') + '</div>' +
+      '<div><h4>' + esc(n.title || '') + '</h4><p>' + esc(preview) + '</p>' +
+      more + dateLineHTML(n) + '</div></div>';
+  }
+
+  // Full view (modal): whole body, line breaks preserved.
+  function newsFullHTML(n) {
+    var body = esc(n.body || '').replace(/\n/g, '<br>');
+    return '<div class="news-item"><div class="news-thumb">' + esc(n.tag || 'CAHL') + '</div>' +
+      '<div><h4>' + esc(n.title || '') + '</h4><p>' + body + '</p>' + dateLineHTML(n) + '</div></div>';
+  }
+
+  function renderNews(season) {
+    var body = document.getElementById('newsBody');
+    if (!body) return;
+    var items = CAHL.sortNews(season.news || []);
+    if (!items.length) { body.innerHTML = '<p class="hint">No news yet.</p>'; return; }
+    body.innerHTML = items.slice(0, TOP_NEWS).map(function (n) {
+      return newsCardHTML(n, items.indexOf(n));
+    }).join('');
+
+    var modal = document.getElementById('newsModal');
+    var more = document.getElementById('newsMore');
+    if (!modal) return;
+    var titleEl = document.getElementById('newsModalTitle');
+    var modalBody = document.getElementById('newsModalBody');
+    var closeBtn = document.getElementById('newsModalClose');
+    var lastFocus = null;
+
+    function open(list, title) {
+      modalBody.innerHTML = list.map(newsFullHTML).join('');
+      titleEl.textContent = title || 'League News';
+      lastFocus = document.activeElement;
+      modal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      closeBtn.focus();
+    }
+    function close() {
+      modal.hidden = true;
+      document.body.style.overflow = '';
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    closeBtn.addEventListener('click', close);
+    modal.querySelectorAll('[data-close]').forEach(function (el) { el.addEventListener('click', close); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !modal.hidden) close(); });
+
+    // "Read more" on a single long post opens just that post.
+    body.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-news-idx]');
+      if (!btn) return;
+      var n = items[+btn.getAttribute('data-news-idx')];
+      if (n) open([n], n.title || 'League News');
+    });
+
+    // "View all" opens the full list.
+    if (items.length > TOP_NEWS && more) {
+      more.hidden = false;
+      more.textContent = 'View all news (' + items.length + ') →';
+      more.addEventListener('click', function () { open(items, 'League News'); });
+    }
+  }
+
   function renderLeaders(rows) {
     var g = CAHL.leader(rows, 'g'), a = CAHL.leader(rows, 'a'), p = CAHL.leader(rows, 'pts');
     document.getElementById('goalName').textContent = g.name;
@@ -81,6 +157,7 @@
     var game = nextGame(schedule);
     renderNextGame(game, season);
     renderSchedule(schedule, game);
+    renderNews(season);
     var rows = CAHL.aggregate(season);
     renderStats(rows);
     renderLeaders(rows);

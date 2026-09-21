@@ -66,6 +66,22 @@ body{
 .news-item{display:grid;grid-template-columns:72px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid #ccd8df}
 .news-thumb{height:52px;border-radius:5px;background:linear-gradient(135deg,#1a5f90,#0b2a46);display:grid;place-items:center;color:white;font-weight:900}
 .news-item h4{margin:0 0 3px;font-size:16px} .news-item p{margin:0;font-size:13px;color:#385167}
+.news-item:last-child{border-bottom:none}
+.news-date{display:block;margin-top:5px;font-size:11px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;color:#7c93a6}
+.read-more{display:inline-block;margin-top:4px;background:none;border:none;color:#0f66b3;font-weight:800;font-size:12px;cursor:pointer;padding:0}
+.read-more:hover{text-decoration:underline}
+.news-more{margin-top:10px;width:100%;background:linear-gradient(#0c4677,#082c4c);color:white;border:none;border-radius:7px;padding:10px;font-weight:800;font-size:14px;cursor:pointer}
+.news-more:hover{filter:brightness(1.08)}
+.hint{font-size:13px;color:#4a6076;margin:6px 0}
+/* News modal */
+.modal[hidden]{display:none}
+.modal{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:16px}
+.modal-backdrop{position:absolute;inset:0;background:rgba(4,20,34,.55)}
+.modal-card{position:relative;width:100%;max-width:640px;max-height:85vh;display:flex;flex-direction:column;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 20px 50px rgba(3,21,38,.4)}
+.modal-head{display:flex;align-items:center;justify-content:space-between;background:linear-gradient(#0c4677,#082c4c);color:#fff;padding:12px 16px}
+.modal-head h3{margin:0;font-size:20px;font-weight:900;text-transform:uppercase}
+.modal-close{background:none;border:none;color:#fff;font-size:28px;line-height:1;cursor:pointer;padding:0 4px}
+.modal-body{padding:6px 16px 16px;overflow:auto}
 .leader-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .leader-card{border:1px solid #7d9cb2;border-radius:8px;background:white;text-align:center;overflow:hidden}
 .leader-card .title{color:white;font-weight:900;padding:9px;background:#bd1218}

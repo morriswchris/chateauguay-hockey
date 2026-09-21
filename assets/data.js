@@ -50,10 +50,21 @@
     return best;
   }
 
+  // Order news for display: pinned items (no date) first in sheet order,
+  // then dated items newest-first.
+  function sortNews(news) {
+    var items = (news || []).slice();
+    var pinned = items.filter(function (n) { return n.pinned || !n.iso; });
+    var dated = items.filter(function (n) { return !(n.pinned || !n.iso); });
+    dated.sort(function (a, b) { return a.iso < b.iso ? 1 : a.iso > b.iso ? -1 : 0; });
+    return pinned.concat(dated);
+  }
+
   global.CAHL = {
     DATA_PATH: DATA_PATH,
     loadSeason: loadSeason,
     aggregate: aggregate,
-    leader: leader
+    leader: leader,
+    sortNews: sortNews
   };
 })(window);
