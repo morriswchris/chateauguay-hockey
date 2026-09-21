@@ -130,12 +130,23 @@
       if (n) open([n], n.title || 'League News');
     });
 
-    // "View all" opens the full list.
+    // "View all" opens the full list. The badge count reflects only current/
+    // upcoming dated posts (today or later); pinned/evergreen posts and past
+    // posts are not counted.
     if (items.length > TOP_NEWS && more) {
+      var today = todayISO();
+      var upcoming = items.filter(function (n) {
+        return !n.pinned && n.iso && n.iso >= today;
+      }).length;
       more.hidden = false;
-      more.textContent = 'View all news (' + items.length + ') →';
+      more.textContent = upcoming ? 'View all news (' + upcoming + ') →' : 'View all news →';
       more.addEventListener('click', function () { open(items, 'League News'); });
     }
+  }
+
+  function todayISO() {
+    var d = new Date(), m = d.getMonth() + 1, day = d.getDate();
+    return d.getFullYear() + '-' + (m < 10 ? '0' + m : m) + '-' + (day < 10 ? '0' + day : day);
   }
 
   function renderLeaders(rows) {

@@ -62,7 +62,8 @@ The **News** sheet is also optional. A row with **no date is pinned** to the top
 (evergreen items); dated rows are shown newest-first. `Tag` is the small badge.
 The site shows the top 3; a long post is truncated with a **Read more** link that
 opens the full text in a modal, and if there are more than 3 posts a **View all
-news** button opens the rest:
+news** button opens the rest. That button's count reflects only current/upcoming
+dated posts (today or later) — pinned and past posts aren't counted:
 
 | Date | Tag | Title | Body |
 |------|-----|-------|------|
@@ -80,6 +81,7 @@ news** button opens the rest:
    `Settings → Secrets and variables → Actions → Variables`:
    - `STATS_CSV_URL` — required
    - `SCHEDULE_CSV_URL` — optional (omit to keep the schedule in `season.json`)
+   - `NEWS_CSV_URL` — optional (omit to keep the news in `season.json`)
 3. **Enable Pages**: `Settings → Pages → Build and deployment → Source: GitHub
    Actions`.
 
