@@ -59,11 +59,12 @@ the stats dates):
 | 1 | 2026-09-09 | 19:45–21:15 | Kim St-Pierre |
 
 The **News** sheet is also optional. A row with **no date is pinned** to the top
-(evergreen items); dated rows are shown newest-first. `Tag` is the small badge.
-The site shows the top 3; a long post is truncated with a **Read more** link that
-opens the full text in a modal, and if there are more than 3 posts a **View all
-news** button opens the rest. That button's count reflects only current/upcoming
-dated posts (today or later) — pinned and past posts aren't counted:
+(evergreen items); dated rows are shown newest-first. `Tag` is the small badge
+(kept short so it fits). The site shows the top 3; long titles are trimmed to one
+line and long bodies to a few lines, with a **View more** link that expands a
+post in place. The **NEWS** nav link and the **View all news** button both open
+the full list in a modal. The button's count reflects only current/upcoming dated
+posts (today or later) — pinned and past posts aren't counted:
 
 | Date | Tag | Title | Body |
 |------|-----|-------|------|
