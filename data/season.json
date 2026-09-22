@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-09-21T20:17:55Z",
+  "updated": "2026-09-22T19:36:44Z",
   "schedule": [
     {
       "week": "1",
@@ -505,7 +505,7 @@
       "iso": "",
       "tag": "CAHL",
       "title": "Welcome to the 2026–2027 Season!",
-      "body": "Hi everyone,\nGreat start to the winter season. The white team comeback was outstanding in week1.  As we all discussed many times, its not really cool to keep the game going after a two goal lead after hitting 5 goals as it can get out of hand but last night was an exception. The ideal way to play all games is by resetting the score back to 0 once the score hits 5 and there is a two-goal difference. I know some of you don't like that, but with spares and team balancing, its the best way. \n\nCollections -\nA few things I want to remind everyone. If you have played one game then you should have made a payment towards your registration fees. If that's not the case, please send me an Etransfer. I feel like a bill collector, the worst part of my job is trying to collect money.\n\nTime on the ice -\nThe other thing, is time on the ice per shift. Be conscious of the clock when your on the ice, try hard not to stay of the ice for 5 minutes as the next line will get cold and will get angry and do the same thing. Be fair which will result in more icetime all around.\n\nThe Referee -\nThe last thing we all want to hear are complaints on the ice that Nick missed a call or and offside or didn't see a slashing call or whatever. Please refrain from giving nick comments. This is garage hockey and the ultimate goal is to have fun, a few good laughs and of course a few cold beers or Gatorade after the game.\n\nThanks again everyone for a GREAT kickoff to the season. Below are the details on the 2 new contracts recently signed.\n\n3 year contract for Carter Howell with 87 points in his last season with the hounddogs-\r\nChateauguay - The  CAHL league is happy to announce a 3 year deal signed in August with youngblood Carter Howell who accepted the offer to join the league during the offseason. \r\nHowell set a record in his first 3 seasons with his former HoundDogs team as the top goal scorer in the league finishing each season with 87 plus points. He will be a great addition to the gang. He was interviewed this week in the bathroom of the golf course while taking a dump in prep for his annual tournament and said he was really looking forward to joining to contribute to the fun of the Chateauguay league. \r\n\r\n3 year contract for Aruntase Paul with 55 points in his last season with the Icestingers-\r\nChateauguay - The  CAHL league is also pleased to announce another 3 year deal signed in August with Paul who accepted the offer to join the league during the offseason. \r\nPaul is a 6ft 2 roadrunner who breaks energy to the ice every game with eyes in the back if his head.  In his last season with the IceDogs, Paul locked in 98 points and as the top defensemen drafted, he will be another great addition to the league. In his interview earlier this week, Paul noted that playing with the old guys is so much more fun.",
+      "body": "Hi everyone,\nGreat start to the winter season. The white team comeback was outstanding in week1.  As we all discussed many times, its not really cool to keep the game going after a two goal lead after hitting 5 goals as it can get out of hand but last night was an exception. The ideal way to play all games is by resetting the score back to 0 once the score hits 5 and there is a two-goal difference. I know some of you don't like that, but with spares and team balancing, its the best way. \n\nCollections -\nA few things I want to remind everyone. If you have played one game then you should have made a payment towards your registration fees. If that's not the case, please send me an Etransfer. I feel like a bill collector, the worst part of my job is trying to collect money.\n\nTime on the ice -\nThe other thing, is time on the ice per shift. Be conscious of the clock when your on the ice, try hard not to stay of the ice for 5 minutes as the next line will get cold and will get angry and do the same thing. Be fair which will result in more icetime all around.\n\nThe Referee -\nThe last thing we all want to hear are complaints on the ice that Nick missed a call or and offside or didn't see a slashing call or whatever. Please refrain from giving nick comments. This is garage hockey and the ultimate goal is to have fun, a few good laughs and of course a few cold beers or Gatorade after the game.\n\nThanks again everyone for a GREAT kickoff to the season.",
       "pinned": true
     },
     {
@@ -523,6 +523,22 @@
       "title": "Weekly Updates",
       "body": "News and statistics are updated throughout the season.",
       "pinned": true
+    },
+    {
+      "date": "Wed, Sep 16, 2026",
+      "iso": "2026-09-16",
+      "tag": "",
+      "title": "New Player signed",
+      "body": "3 year contract for Aruntase Paul with 55 points in his last season with the Icestingers-\nChateauguay - The  CAHL league is also pleased to announce another 3 year deal signed in August with Paul who accepted the offer to join the league during the offseason. \nPaul is a 6ft 2 roadrunner who breaks energy to the ice every game with eyes in the back if his head.  In his last season with the IceDogs, Paul locked in 98 points and as the top defensemen drafted, he will be another great addition to the league. In his interview earlier this week, Paul noted that playing with the old guys is so much more fun.",
+      "pinned": false
+    },
+    {
+      "date": "Wed, Sep 9, 2026",
+      "iso": "2026-09-09",
+      "tag": "",
+      "title": "New Player signed",
+      "body": "3 year contract for Carter Howell with 87 points in his last season with the hounddogs-\nChateauguay - The  CAHL league is happy to announce a 3 year deal signed in August with youngblood Carter Howell who accepted the offer to join the league during the offseason. \nHowell set a record in his first 3 seasons with his former HoundDogs team as the top goal scorer in the league finishing each season with 87 plus points. He will be a great addition to the gang. He was interviewed this week in the bathroom of the golf course while taking a dump in prep for his annual tournament and said he was really looking forward to joining to contribute to the fun of the Chateauguay league.",
+      "pinned": false
     }
   ]
 }
