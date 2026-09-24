@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-09-23T19:32:25Z",
+  "updated": "2026-09-24T19:51:53Z",
   "schedule": [
     {
       "week": "1",
@@ -277,8 +277,8 @@
         },
         {
           "player": "Ben Levesque",
-          "g": 8,
-          "a": 5
+          "g": 4,
+          "a": 3
         },
         {
           "player": "Carter Howell",
@@ -397,11 +397,6 @@
           "a": 0
         },
         {
-          "player": "Ben Levesque",
-          "g": 0,
-          "a": 0
-        },
-        {
           "player": "Carter Howell",
           "g": 0,
           "a": 0
@@ -418,11 +413,6 @@
         },
         {
           "player": "Jarret Butler",
-          "g": 0,
-          "a": 0
-        },
-        {
-          "player": "John White (Goalie)",
           "g": 0,
           "a": 0
         },
@@ -462,11 +452,6 @@
           "a": 0
         },
         {
-          "player": "Patrick Robertson (Goalie)",
-          "g": 0,
-          "a": 0
-        },
-        {
           "player": "Scott Howell",
           "g": 0,
           "a": 0
@@ -497,9 +482,123 @@
           "a": 0
         }
       ]
+    },
+    {
+      "date": "Wed, Sep 23, 2026",
+      "iso": "2026-09-23",
+      "stats": [
+        {
+          "player": "Adam Porter",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Andy Skobin",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Arune Paul",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Ben Levesque",
+          "g": 5,
+          "a": 0
+        },
+        {
+          "player": "Carter Howell",
+          "g": 1,
+          "a": 2
+        },
+        {
+          "player": "Danny Martinez",
+          "g": 3,
+          "a": 1
+        },
+        {
+          "player": "JF Fournier",
+          "g": 3,
+          "a": 1
+        },
+        {
+          "player": "Jarret Butler",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Kevin Donnely",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Lorne Lucas",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Marc Levesque",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Mark Lucas",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Nick Montour",
+          "g": 1,
+          "a": 1
+        },
+        {
+          "player": "Pat Brisebois",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Shane Ford",
+          "g": 0,
+          "a": 4
+        },
+        {
+          "player": "Shawn Blenman",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Stephane Goyette",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Steve Diabo",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Steve McMillan",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Travis McCumber",
+          "g": 0,
+          "a": 0
+        }
+      ]
     }
   ],
   "news": [
+    {
+      "date": "Wed, Sep 23, 2026",
+      "iso": "2026-09-23",
+      "tag": "",
+      "title": "Sept 23rd",
+      "body": "A GOALTENDING BATTLE FOR THE AGES\nIf you were one of the lucky fans holding a ticket for last night’s matchup in Châteauguay, consider yourself privileged — you witnessed one hell of a battle between the pipes.\nReplacement goalie Eric “Superman” faced an incredible 48 shots, making some absolutely spectacular saves. \nHe saved some of his best work for the final six minutes, including an absolute robbery on Shane, who looked certain to bury a beauty upstairs. Superman had other plans and left Shane shaking his head — and empty-handed.\n\nMARTINEZ IS BACK!\nAfter taking nearly three months away from the rink, Martinez returned with one of his best performances ever, lighting the lamp THREE TIMES!\nThat’s right — HAT TRICK!\nRumour has it there were so many hats thrown onto the ice that officials needed 10 minutes to clean them all up. Châteauguay hasn’t seen that much headwear since the last clearance sale at Lids.\n\nJ WHITE STANDS TALL\nAt the other end, J White was pushing his limits with some outstanding stretch saves, doing everything possible to keep the Levesque brothers from padding their point totals.\nWhite reportedly suffered a slight groin injury, but early reports indicate he’ll survive. Sources close to the team say the man has balls of steel, so apparently there’s not much concern in that department. 😂\n\nTSN IS BACK\nTSN was on-site again this week for exclusive pre- and post-game interviews.\nAll video links will be posted over the next few days, including player reactions and some hard-hitting journalism from inside the CAHL locker room.\n\nHEALTHY SCRATCH REPORT\nA few familiar names were missing from the lineup last night, including Goodleaf, Howell and Blenman — players who normally bring the energy level up another notch.\nBut despite missing some firepower, the boys did just fine without them.\nAnother Wednesday night in the books.\n\nBig saves. Big goals. A hat trick. Balls of steel.\nJust another night in the CAHL. 🏒🔥\n\nBelow are the game details, \nGame 1 – Black 5, White 1\nGame 2 – Black 3, White 5\nGame 3 – Black 3, White 2\n\nThe 3 stars of the game were , \n1.        Danny Martinez\n2.        JF Fournier\n3.        Shane Ford",
+      "pinned": false
+    },
     {
       "date": "Wed, Sep 16, 2026",
       "iso": "2026-09-16",
