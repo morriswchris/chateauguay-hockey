@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-09-25T19:54:12Z",
+  "updated": "2026-10-01T20:52:03Z",
   "schedule": [
     {
       "week": "1",
@@ -588,9 +588,128 @@
           "a": 0
         }
       ]
+    },
+    {
+      "date": "Wed, Sep 30, 2026",
+      "iso": "2026-09-30",
+      "stats": [
+        {
+          "player": "Andy Skobin",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Arune Paul",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Bart Goodleaf",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Ben Levesque",
+          "g": 2,
+          "a": 1
+        },
+        {
+          "player": "Carter Howell",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Francis Chenevert",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Jarret Butler",
+          "g": 1,
+          "a": 1
+        },
+        {
+          "player": "John White (G)",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Kevin Donnely",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Lorne Lucas",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Marc Levesque",
+          "g": 3,
+          "a": 1
+        },
+        {
+          "player": "Mark Lucas",
+          "g": 1,
+          "a": 1
+        },
+        {
+          "player": "Mark Massel",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Matieu Rheault",
+          "g": 1,
+          "a": 1
+        },
+        {
+          "player": "Mike Stacey",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Pat Brisebois",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Pat Robertson (G)",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Shane Ford",
+          "g": 2,
+          "a": 2
+        },
+        {
+          "player": "Shawn Blenman",
+          "g": 1,
+          "a": 1
+        },
+        {
+          "player": "Stephane Goyette",
+          "g": 2,
+          "a": 1
+        },
+        {
+          "player": "Tommy Vezina",
+          "g": 0,
+          "a": 0
+        }
+      ]
     }
   ],
   "news": [
+    {
+      "date": "Wed, Sep 30, 2026",
+      "iso": "2026-09-30",
+      "tag": "",
+      "title": "Sept 30th (Week4)",
+      "body": "THREE GAMES. PLENTY OF ACTION.\nAnother great night of CAHL hockey with three games in the books and plenty of highlight-reel moments along the way!\nGame1 Black came out flying and took it 5–1. Game2 White answered back with a convincing 5–2 victory and Game3 the rubber match was a battle right to the end, with White squeezing out a 2–1 win.\nThere were some absolute beauties scored throughout the night, with contributions coming from all over the ice.\nOverall, the teams were pretty evenly matched… although a few “spares” showed up looking suspiciously like they had agents, endorsement deals and NHL clauses in their contracts. \nThree games, competitive hockey, a few ringers and plenty of chirping — just another Wednesday night in the CAHL!\n\nFORD WAS ON FIRE!  🔥🔥🔥🔥🔥🔥\nShane Ford spent the better part of the week leading up to last night’s game working the farm and hanging out with his animals — and apparently, that was exactly the fuel he needed!\nFord came flying out of the gate with energy to burn, showcasing his skill set up and down the ice and setting up some incredible plays throughout the night.\nBut he saved his best for last.\nWith the game deadlocked late in the third and only 46 seconds remaining, Ford stepped up and buried the GAME-WINNING GOAL, clinching the third game of the night in dramatic fashion!\nThe clutch performance earned Shane Ford the 1st Star of the Game. Farm strong. Game winner. First star. What a night for Ford!\n\nMISSING THE BREAKAWAY!\nLate in the second period, Mathieu Rheault broke loose from centre ice and went one-on-one with Robertson, trying to pull off a little magic with a slick deke.\nAt first glance — NO GOAL! Robertson appeared to have shut the door.\nUnfortunately, the CAHL video replay system was apparently experiencing the same technical difficulties it’s had since 1987, so the officials couldn’t go upstairs for a review.\nBut the next-morning video review told a different story — the puck had clearly crossed the line! Rheault was robbed of what would have been an absolute beauty of a breakaway goal.\nRumours are already circulating that Rheault’s agent has filed an official protest with the league and is demanding the goal, a point on the scoresheet and a formal apology from the CAHL replay department.\nThe goal may not be on the scoresheet… but the camera doesn’t lie! This also led to a second star spot for Rheault.\n\nWHITE SHOWING OFF THE HANDS!\nGoalie John White proved last night that he can do a lot more than just stop pucks!\nWhite picked up a rare goalie assist, making a beautiful setup to Arune, who took it from there and went coast-to-coast before burying the goal.\nYou don’t see goalies picking up points very often, but this one showed off White’s confidence with the puck and his ability to use his stick to get the offence moving.\nRumour has it John was checking the scoring sheet after the game to make absolutely sure the assist was recorded.\nOne assist closer to the Art Ross, Johnny!\n\nHEALTHY SCRATCH REPORT\nA few familiar names were missing from the lineup last night, including Martinez, Montour, — players who normally bring the energy level up another notch.\nBut despite missing some firepower, the boys did just fine without them. There was also Howell is was also out as he is vacationing in the islands\nAnother Wednesday night in the books.\n\nBelow are the game details,\nGame 1 – Black 5, White 1\nGame 2 – White 5, White 2\nGame 3 – Black 1, White 2\n\nThe 3 stars of the game were ,\n1. Shane Ford   🔥🔥🔥🔥\n2. Matieu Rheault\n3. Lornee Lucas",
+      "pinned": false
+    },
     {
       "date": "Wed, Sep 23, 2026",
       "iso": "2026-09-23",
