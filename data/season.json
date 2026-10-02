@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-10-01T20:52:03Z",
+  "updated": "2026-10-02T20:26:38Z",
   "schedule": [
     {
       "week": "1",
@@ -631,7 +631,7 @@
         {
           "player": "John White (G)",
           "g": 0,
-          "a": 2
+          "a": 1
         },
         {
           "player": "Kevin Donnely",
@@ -674,9 +674,9 @@
           "a": 2
         },
         {
-          "player": "Pat Robertson (G)",
+          "player": "Patrick Robertson (G)",
           "g": 0,
-          "a": 1
+          "a": 0
         },
         {
           "player": "Shane Ford",
@@ -695,8 +695,8 @@
         },
         {
           "player": "Tommy Vezina",
-          "g": 0,
-          "a": 0
+          "g": 2,
+          "a": 2
         }
       ]
     }
