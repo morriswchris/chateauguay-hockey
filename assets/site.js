@@ -63,32 +63,71 @@
   }
 
   var TOP_NEWS = 3;
-  var TAG_MAX = 8;   // badge fits ~8 chars; longer tags are cut
 
   function dateLineHTML(n) {
     return n.date ? '<span class="news-date">' + esc(n.date) + '</span>' : '';
   }
 
-  function tagShort(t) {
-    t = (t || 'CAHL').trim();
-    return t.length > TAG_MAX ? t.slice(0, TAG_MAX) : t;
+  // Minimal, safe Markdown → HTML for news bodies. Everything is escaped first,
+  // so only the markup below can produce tags. Single newlines become <br>
+  // (the sheet is typed like a text message, not like a Markdown document).
+  // Supports: # headings, **bold**, *italic*, ~~strike~~, `code`, [links](url),
+  // bare URLs, - / 1. lists, > quotes and --- rules.
+  function mdInline(s) {
+    var codes = [];
+    s = esc(s).replace(/`([^`]+)`/g, function (m, c) { codes.push(c); return '\u0000' + (codes.length - 1) + '\u0000'; });
+    s = s
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|mailto:[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+      .replace(/(^|[\s(])(https?:\/\/[^\s<]+[^\s<.,;:!?)])/g, '$1<a href="$2" target="_blank" rel="noopener">$2</a>')
+      .replace(/(\*\*|__)(?=\S)([\s\S]*?\S)\1/g, '<strong>$2</strong>')
+      .replace(/(^|[^*\w])\*(?=\S)([^*]*?\S)\*(?!\*)/g, '$1<em>$2</em>')
+      .replace(/(^|[^\w])_(?=\S)([^_]*?\S)_(?!\w)/g, '$1<em>$2</em>')
+      .replace(/~~(?=\S)([\s\S]*?\S)~~/g, '<del>$1</del>');
+    return s.replace(/\u0000(\d+)\u0000/g, function (m, i) { return '<code>' + codes[i] + '</code>'; });
+  }
+
+  function markdown(src) {
+    var lines = String(src || '').replace(/\r\n?/g, '\n').split('\n');
+    var out = [], para = [], list = null, quote = [];
+    function flushPara() { if (para.length) out.push('<p>' + para.map(mdInline).join('<br>') + '</p>'); para = []; }
+    function flushList() { if (list) out.push('<' + list.tag + '>' + list.items.map(function (i) { return '<li>' + mdInline(i) + '</li>'; }).join('') + '</' + list.tag + '>'); list = null; }
+    function flushQuote() { if (quote.length) out.push('<blockquote>' + quote.map(mdInline).join('<br>') + '</blockquote>'); quote = []; }
+    function flush() { flushPara(); flushList(); flushQuote(); }
+    lines.forEach(function (line) {
+      var m;
+      if (!line.trim()) { flush(); return; }
+      if ((m = line.match(/^\s*(#{1,6})\s+(.*?)\s*#*\s*$/))) {
+        flush(); var lvl = Math.min(m[1].length + 3, 6);   // # → h4 (cards already use h4 for titles)
+        out.push('<h' + lvl + ' class="md-h">' + mdInline(m[2]) + '</h' + lvl + '>'); return;
+      }
+      if (/^\s*([-*_])(\s*\1){2,}\s*$/.test(line)) { flush(); out.push('<hr>'); return; }
+      if ((m = line.match(/^\s*>\s?(.*)$/))) { flushPara(); flushList(); quote.push(m[1]); return; }
+      if ((m = line.match(/^\s*(?:([-*+])|(\d+)[.)])\s+(.*)$/))) {
+        var tag = m[1] ? 'ul' : 'ol';
+        flushPara(); flushQuote();
+        if (list && list.tag !== tag) flushList();
+        if (!list) list = { tag: tag, items: [] };
+        list.items.push(m[3]); return;
+      }
+      flushList(); flushQuote(); para.push(line);
+    });
+    flush();
+    return out.join('');
   }
 
   // Card view: title truncates to one line (CSS), body is clamped to a fixed
-  // number of lines (CSS) and expands inline via the "View more" button.
+  // height (CSS) and expands inline via the "View more" button.
   function newsCardHTML(n) {
-    return '<div class="news-item"><div class="news-thumb">' + esc(tagShort(n.tag)) + '</div>' +
-      '<div class="news-content"><h4>' + esc(n.title || '') + '</h4>' +
-      '<p class="news-text">' + esc(n.body || '') + '</p>' +
+    return '<div class="news-item"><div class="news-content"><h4>' + esc(n.title || '') + '</h4>' +
+      '<div class="news-text md">' + markdown(n.body) + '</div>' +
       '<button type="button" class="view-more" hidden></button>' +
       dateLineHTML(n) + '</div></div>';
   }
 
-  // Full view (modal): whole body, line breaks preserved.
+  // Full view (modal): whole body.
   function newsFullHTML(n) {
-    var body = esc(n.body || '').replace(/\n/g, '<br>');
-    return '<div class="news-item"><div class="news-thumb">' + esc(tagShort(n.tag)) + '</div>' +
-      '<div class="news-content"><h4>' + esc(n.title || '') + '</h4><p>' + body + '</p>' +
+    return '<div class="news-item"><div class="news-content"><h4>' + esc(n.title || '') + '</h4>' +
+      '<div class="md">' + markdown(n.body) + '</div>' +
       dateLineHTML(n) + '</div></div>';
   }
 

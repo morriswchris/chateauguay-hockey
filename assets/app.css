@@ -64,18 +64,26 @@ body{
 .date-box .year{font-weight:800;padding-bottom:10px}
 .game-details strong{font-size:22px;display:block;margin:7px 0}
 .btn{display:inline-block;background:linear-gradient(#ef2226,#ba0d12);color:white;font-weight:900;padding:10px 18px;border-radius:7px;text-decoration:none;margin-top:14px}
-.news-item{display:grid;grid-template-columns:72px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid #ccd8df}
-.news-thumb{height:52px;border-radius:5px;background:linear-gradient(135deg,#1a5f90,#0b2a46);display:grid;place-items:center;color:white;font-weight:900;font-size:11px;letter-spacing:0;text-align:center;padding:2px 4px;overflow:hidden;white-space:nowrap}
-.news-item h4{margin:0 0 3px;font-size:16px} .news-item p{margin:0;font-size:13px;color:#385167}
+.news-item{padding:8px 0;border-bottom:1px solid #ccd8df}
+.news-item h4{margin:0 0 3px;font-size:16px}
+/* Markdown news bodies */
+.md{font-size:13px;line-height:1.45;color:#385167;overflow-wrap:anywhere}
+.md p,.md ul,.md ol,.md blockquote{margin:0 0 .6em} .md>:last-child{margin-bottom:0}
+.md ul,.md ol{padding-left:1.3em}
+.md .md-h{margin:.4em 0 .3em;font-size:14px;color:#0b2a46}
+.md blockquote{border-left:3px solid #c5d4df;padding-left:8px;color:#4a6076}
+.md hr{border:none;border-top:1px solid #ccd8df;margin:.6em 0}
+.md code{background:#e6eef3;border-radius:3px;padding:0 3px;font-size:12px}
+.md a{color:#0f66b3}
 .news-item:last-child{border-bottom:none}
-.news-content{min-width:0}   /* allow the title/body to truncate within the grid column */
 /* Card (panel) truncation — the modal (#newsModalBody) shows full bodies. */
 #newsBody .news-item h4{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 /* Titles are headlines: clamp them even in the modal so a paragraph-length
    title can't blow up the layout (the body below still shows in full). */
 #newsModalBody .news-item h4{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
 #newsBody .news-item.expanded h4{white-space:normal}
-#newsBody .news-item:not(.expanded) .news-text{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
+/* Height clamp (not line-clamp) so multi-paragraph Markdown clamps reliably. */
+#newsBody .news-item:not(.expanded) .news-text{max-height:4.35em;overflow:hidden;-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
 .news-date{display:block;margin-top:5px;font-size:11px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;color:#7c93a6}
 .view-more{display:inline-block;margin-top:4px;background:none;border:none;color:#0f66b3;font-weight:800;font-size:12px;cursor:pointer;padding:0}
 .view-more:hover{text-decoration:underline}
