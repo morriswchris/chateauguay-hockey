@@ -131,9 +131,14 @@
       dateLineHTML(n) + '</div></div>';
   }
 
-  // Reveal an inline "View more" only on cards whose body is actually clamped,
-  // and toggle expand/collapse.
+  // Reveal an inline "View more" only on cards whose body is actually clamped.
+  // Tapping anywhere on such a card (or its button) toggles it; opening one
+  // card collapses any other open card.
   function wireExpanders(container) {
+    function setExpanded(item, on) {
+      item.classList.toggle('expanded', on);
+      item.querySelector('.view-more').textContent = on ? 'View less' : 'View more';
+    }
     container.querySelectorAll('.news-item').forEach(function (item) {
       var text = item.querySelector('.news-text');
       var btn = item.querySelector('.view-more');
@@ -141,9 +146,15 @@
       if (text.scrollHeight - text.clientHeight > 2) {
         btn.hidden = false;
         btn.textContent = 'View more';
-        btn.addEventListener('click', function () {
-          var expanded = item.classList.toggle('expanded');
-          btn.textContent = expanded ? 'View less' : 'View more';
+        item.classList.add('expandable');
+        item.addEventListener('click', function (e) {
+          if (e.target.closest('a')) return;                    // let links work
+          if (!e.target.closest('.view-more') && String(window.getSelection())) return;   // text selection
+          var on = !item.classList.contains('expanded');
+          container.querySelectorAll('.news-item.expanded').forEach(function (other) {
+            if (other !== item) setExpanded(other, false);
+          });
+          setExpanded(item, on);
         });
       }
     });

@@ -87,6 +87,7 @@ body{
 .news-date{display:block;margin-top:5px;font-size:11px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;color:#7c93a6}
 .view-more{display:inline-block;margin-top:4px;background:none;border:none;color:#0f66b3;font-weight:800;font-size:12px;cursor:pointer;padding:0}
 .view-more:hover{text-decoration:underline}
+#newsBody .news-item.expandable{cursor:pointer;-webkit-tap-highlight-color:transparent}
 .news-more{margin-top:10px;width:100%;background:linear-gradient(#0c4677,#082c4c);color:white;border:none;border-radius:7px;padding:10px;font-weight:800;font-size:14px;cursor:pointer}
 .news-more:hover{filter:brightness(1.08)}
 .hint{font-size:13px;color:#4a6076;margin:6px 0}
