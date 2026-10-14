@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-10-08T21:06:42Z",
+  "updated": "2026-10-14T20:01:49Z",
   "schedule": [
     {
       "week": "1",
@@ -665,7 +665,7 @@
         },
         {
           "player": "Mike Stacey",
-          "g": 0,
+          "g": 1,
           "a": 2
         },
         {
