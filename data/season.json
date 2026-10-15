@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-10-14T20:01:49Z",
+  "updated": "2026-10-15T19:44:43Z",
   "schedule": [
     {
       "week": "1",
@@ -810,9 +810,133 @@
           "a": 1
         }
       ]
+    },
+    {
+      "date": "Wed, Oct 14, 2026",
+      "iso": "2026-10-14",
+      "stats": [
+        {
+          "player": "Andy Skobin",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Arune Paul",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Bart Goodleaf",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Ben Levesque",
+          "g": 6,
+          "a": 0
+        },
+        {
+          "player": "Carter Howell",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Danny Martinez",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Eric McDougal (G)",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Jarret Butler",
+          "g": 1,
+          "a": 1
+        },
+        {
+          "player": "Kevin Donnely",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Lorne Lucas",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Marc Levesque",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Mark Lucas",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Mark Massel",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Nick Montour",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Pat Brisebois",
+          "g": 2,
+          "a": 2
+        },
+        {
+          "player": "Patrick Robertson (G)",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Scott Howell",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Shane Ford",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Stephane Goyette",
+          "g": 2,
+          "a": 1
+        },
+        {
+          "player": "Steve Diabo",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Travis McCumber",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Wifi Lariviere",
+          "g": 0,
+          "a": 0
+        }
+      ]
     }
   ],
   "news": [
+    {
+      "date": "Wed, Oct 14, 2026",
+      "iso": "2026-10-14",
+      "tag": "",
+      "title": "Oct 14th (Week6)",
+      "body": "🏒 MARKY MARKS WEEKLY HOCKEY UPDATE\nBlack Team Dominates in Chateauguay, Sweeping Both Games!\nWhat a night for hockey fans! An enthusiastic crowd of approximately 3,000 fans packed the venue in Chateauguay to witness an exciting doubleheader filled with goals, great saves, strong teamwork, and plenty of competitive action. When the final whistles blew, the Black Team had completed an impressive sweep, winning the first game 5–2 before following it up with a convincing 4–2 victory in Game 2.\n\nGAME 1: BLACK TEAM STRIKES FIRST — FINAL SCORE: 5–2\nThe Black Team came out ready to play, setting the tone with strong offensive pressure and timely finishing. They found the back of the net five times, while their defensive structure helped limit the White Team to just two goals.\nThe White Team battled hard and created some good moments, but Black proved too difficult to contain on this night. With solid goaltending and contributions throughout the lineup, the Black Team secured a well-earned opening victory.\n\nGAME 2: BLACK TEAM SEALS THE SWEEP — FINAL SCORE: 4–2\nIf the first game was entertaining, the second was another showcase of competitive hockey! The White Team looked to respond, but the Black Team once again demonstrated its offensive firepower and determination.\nBlack found the back of the net four times, maintaining control and holding off the White Team's attempts to get back into the game. The White Team continued to compete until the end, but Black completed the doubleheader sweep with a second straight victory.\n\n⭐ THREE STARS OF THE NIGHT\n⭐ First Star: Ben Levesque — What a performance! \n⭐⭐ Second Star: Pat Robertson — (Goaltender) - A strong team needs a reliable presence between the pipes. \n⭐⭐⭐ Third Star: Pat Brisebois — Pat delivered an outstanding offensive performance with the Lucas bros by his side. \n\nWHITE TEAM SPOTLIGHT: STEPHANE G. DELIVERS\nDespite the two losses, the White Team had its share of standout performances. Stephane G. led the way offensively with two goals and one assist, showing determination and skill throughout the games.\nThe White Team also deserves credit for keeping both contests competitive and playing with a positive attitude. Although the results didn't go their way, the effort was there, and there were plenty of encouraging moments to build on.\n\nA GREAT NIGHT FOR HOCKEY IN CHATEAUGUAY\nWith approximately 3,000 fans in attendance, the atmosphere was electric! The crowd was treated to two entertaining games featuring offensive highlights, team effort, and competitive hockey from both sides.\nMost importantly, both games were played in a fun and fair spirit. The players competed hard, showed respect, and gave the fans an enjoyable hockey experience. That's what recreational and competitive hockey should be all about!\nThat's a wrap on this week's hockey report",
+      "pinned": false
+    },
     {
       "date": "Wed, Oct 7, 2026",
       "iso": "2026-10-07",
