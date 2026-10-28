@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-10-15T19:44:43Z",
+  "updated": "2026-10-28T20:50:56Z",
   "schedule": [
     {
       "week": "1",
@@ -926,9 +926,249 @@
           "a": 0
         }
       ]
+    },
+    {
+      "date": "Wed, Oct 21, 2026",
+      "iso": "2026-10-21",
+      "stats": [
+        {
+          "player": "Andy Skobin",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Ben Levesque",
+          "g": 3,
+          "a": 2
+        },
+        {
+          "player": "Carter Howell",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Colby Larieviere",
+          "g": 2,
+          "a": 1
+        },
+        {
+          "player": "Eric McDougal (G)",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Francis Chenevert",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Jarret Butler",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Kevin Donnely",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Lorne Lucas",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Marc Levesque",
+          "g": 2,
+          "a": 4
+        },
+        {
+          "player": "Mark Lucas",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Mark Massel",
+          "g": 4,
+          "a": 2
+        },
+        {
+          "player": "Nick Montour",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Patrick Robertson (G)",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Scott Howell",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Shane Ford",
+          "g": 2,
+          "a": 2
+        },
+        {
+          "player": "Stephane Goyette",
+          "g": 1,
+          "a": 2
+        },
+        {
+          "player": "Steve Diabo",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Steve McMillan",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Tommy Vezina",
+          "g": 3,
+          "a": 2
+        },
+        {
+          "player": "Travis McCumber",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Wifi Lariviere",
+          "g": 0,
+          "a": 1
+        }
+      ]
+    },
+    {
+      "date": "Wed, Oct 28, 2026",
+      "iso": "2026-10-28",
+      "stats": [
+        {
+          "player": "Adam Porter",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Andy Skobin",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Arune Paul",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Bart Goodleaf",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Ben Levesque",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Carter Howell",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Danny Martinez",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Eric McDougal (G)",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Francis Chenevert",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Jarret Butler",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Kevin Donnely",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Lorne Lucas",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Marc Levesque",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Mark Lucas",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Mark Massel",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Pat Brisebois",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Patrick Robertson (G)",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Scott Howell",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Shane Ford",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Stephane Goyette",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Steve Diabo",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Travis McCumber",
+          "g": 0,
+          "a": 0
+        }
+      ]
     }
   ],
   "news": [
+    {
+      "date": "Wed, Oct 21, 2026",
+      "iso": "2026-10-21",
+      "tag": "",
+      "title": "Oct 21st (Week7)",
+      "body": "Below are the game details,\nGame 1 – Blue 5, White 3\nGame 2 – White 6, White 3\n\n\n🏒 BLUE TEAM BRINGS THE HEAT! MASSel GOES OFF, BIG BENNY DEALS, AND YOUNGBLOOD IS WATCHING HIS HUDSON TAPES! 😂🔥\nAnother night at the rink, another evening full of laughs, goals, questionable defensive decisions, and goalies wondering why they even bothered showing up! 😂\n\nLeading the way for Team Blue was Mark Massel, who apparently decided that passing the puck was optional and scoring goals was his full-time job! Mark lit the lamp FOUR times while adding 2 assists for a ridiculous 6-point night! 🚨🚨🚨🚨 The opposition tried everything to stop him, but at some point, somebody has to actually cover the guy! Mark earned himself FIRST STAR OF THE GAME, and rightfully so. Someone check the opposing team's group chat to see if they've started a petition to ban him! 🤣\n\nRight behind him was Big Benny, who put up another monster performance with 2 goals and 4 assists. Six points for Benny as well! At this rate, the two of them aren't playing hockey — they're running an offensive production line! Somebody better check their sticks for cheat codes because this is getting ridiculous! 🥅🔥\n\nMeanwhile, Steph Goyette continues to prove that he might just be one of the best signings this league has seen in a while. Forward? No problem. Defence? Easy money. Need someone to do a little bit of everything? Give Steph a call! The guy seems to be everywhere on the ice. Pretty soon, we'll need to start charging him extra for all the positions he's covering! 😂 A fantastic addition to the league who keeps showing up week after week and making his presence felt.\n\nOver on Team White, Youngblood Carter Howell continues to bring the energy, the wheels, and some seriously impressive moves every single week. This kid is starting to make people look silly out there! 👀 His style is giving us some serious young Hudson from the Habs vibes. Honestly, we're convinced Carter spends his evenings watching Hudson highlight videos on repeat, practising the moves in the living room, and telling everyone, \"Watch this!\" 😂\n\nAt this point, his YouTube history probably looks like a full-time scouting report! Keep it up, Youngblood — just remember that not every move you see on the highlights reel is going to work when there's a defender waiting to introduce you to the boards! 🤣\n\nAll in all, another fantastic night of hockey filled with big performances, slick hands, plenty of laughs, and enough offensive firepower to make the goalies consider early retirement!\n\n🏆 FIRST STAR: MARK MASSEL — 4 goals, 2 assists, and an evening the opposition would probably prefer to forget.\n🔥 BIG BENNY — 2 goals, 4 assists, and continuing to make the scoresheet his personal autograph book.\n💪 STEPH GOYETTE — The Swiss Army knife of the league, doing it all at both ends of the ice.\n⭐ YOUNGBLOOD CARTER HOWELL — Bringing the energy, the moves, and apparently a serious addiction to Hudson highlight videos!\n\nSame time next week, boys! Bring your best moves, bring your best chirps, and somebody please remind the goalies that they're allowed to stop a puck once in a while! 😂🏒🍻\n\nThe 3 stars of the game were ,\n1. MARK MASSEL\n2. Ben Levesque\n3. Stephane Goyette\n\nThat's a wrap on this week's hockey report",
+      "pinned": false
+    },
     {
       "date": "Wed, Oct 14, 2026",
       "iso": "2026-10-14",
