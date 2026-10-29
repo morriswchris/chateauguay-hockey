@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-10-28T20:50:56Z",
+  "updated": "2026-10-29T20:56:18Z",
   "schedule": [
     {
       "week": "1",
@@ -1049,8 +1049,8 @@
       "stats": [
         {
           "player": "Adam Porter",
-          "g": 0,
-          "a": 0
+          "g": 1,
+          "a": 3
         },
         {
           "player": "Andy Skobin",
@@ -1059,8 +1059,8 @@
         },
         {
           "player": "Arune Paul",
-          "g": 0,
-          "a": 0
+          "g": 1,
+          "a": 1
         },
         {
           "player": "Bart Goodleaf",
@@ -1069,17 +1069,17 @@
         },
         {
           "player": "Ben Levesque",
-          "g": 0,
-          "a": 0
+          "g": 3,
+          "a": 1
         },
         {
           "player": "Carter Howell",
-          "g": 0,
-          "a": 0
+          "g": 3,
+          "a": 1
         },
         {
           "player": "Danny Martinez",
-          "g": 0,
+          "g": 1,
           "a": 0
         },
         {
@@ -1089,7 +1089,7 @@
         },
         {
           "player": "Francis Chenevert",
-          "g": 0,
+          "g": 1,
           "a": 0
         },
         {
@@ -1105,7 +1105,7 @@
         {
           "player": "Lorne Lucas",
           "g": 0,
-          "a": 0
+          "a": 1
         },
         {
           "player": "Marc Levesque",
@@ -1114,18 +1114,18 @@
         },
         {
           "player": "Mark Lucas",
-          "g": 0,
+          "g": 1,
           "a": 0
         },
         {
           "player": "Mark Massel",
-          "g": 0,
+          "g": 1,
           "a": 0
         },
         {
           "player": "Pat Brisebois",
-          "g": 0,
-          "a": 0
+          "g": 1,
+          "a": 2
         },
         {
           "player": "Patrick Robertson (G)",
@@ -1139,8 +1139,8 @@
         },
         {
           "player": "Shane Ford",
-          "g": 0,
-          "a": 0
+          "g": 1,
+          "a": 4
         },
         {
           "player": "Stephane Goyette",
@@ -1149,7 +1149,7 @@
         },
         {
           "player": "Steve Diabo",
-          "g": 0,
+          "g": 1,
           "a": 0
         },
         {
@@ -1161,6 +1161,14 @@
     }
   ],
   "news": [
+    {
+      "date": "Wed, Oct 28, 2026",
+      "iso": "2026-10-28",
+      "tag": "",
+      "title": "Oct 28th  (Week8)",
+      "body": "Below are the game details,\nGame 1 – Black  6, White 9\n\n🏒 BLACK VS WHITE: THE NIGHT OF BROKEN SHOULDERS, BIG POINTS & QUESTIONABLE NURSING CARE! 😂\nChâteauguay was rocking last night! 2,500 tickets sold, TSN on site, and enough action to make you wonder if we were watching a hockey game or the season finale of Days of Our Hockey Lives! 🎬\n\n🔥 THE GAME: A THRILLER UNTIL THE WHEELS FELL OFF!\nBlack vs. White was a nail-biter from start to finish. The teams traded goals like they were exchanging Christmas gifts, going 1–1, 2–2, and on and on until the scoreboard read 6–6!\nThen White finally decided they had entertained the fans long enough and kicked it into another gear late in the third period, pulling away to secure a 9–6 victory!\nBlack put up a fight, but White slammed the door shut. Apparently, someone forgot to tell them this was supposed to be a friendly game! 🤣\n\n⭐ FIRST STAR: SHANE FORD — THE ASSIST MACHINE!\nShane Ford put on an absolute clinic with a five-point night: four assists and one goal!\nFive points? At this rate, the league might have to check his stick for a GPS tracker. The man knew where everyone was going before they did!\nShane was seeing the ice so well that the rest of the players might as well have been wearing name tags. 🏒👏\n\n🚑 THE NIGHT'S UNFORTUNATE INJURY: BART GOODLEAF\nLate in the first period, Bart Goodleaf took an unfortunate slide into the boards and was knocked out for the night.\nDoctors confirmed early this morning that Bart has a dislocated shoulder and is looking at 3–6 weeks of recovery and therapy.\nGet well soon, Bart! The boys need you back on the ice.\nBut here's where the story takes a suspicious turn… 👀\nRumour has it that Bart was receiving some exceptionally dedicated bedside attention from the female nursing staff all night long!\nNow, we're not saying he enjoyed his hospital stay, but some guys get ice packs, while others apparently get the VIP treatment! 😂\nBart, buddy, take your time recovering. No need to rush back if the nursing staff is that good!\n\n⭐ SECOND STAR: PAT “BREEEEEEZE” BRISEBOIS!\nPat Breeeeze Brisebois is heating up, collecting one goal and two assists to earn second-star honours!\nHe's becoming quite the weapon alongside the Lucas line, proving that when the Breeeeze starts blowing, opposing goalies better close the windows!\nThe line was missing its usual superstar again this week: Matty “The Lawyer” Rheault, who's been sidelined while nursing a sprained kneecap.\nWord is that Matty should be back next week. Let's hope his knee is ready for action, because the legal department is expected back in court!\nUntil then, Pat is doing his best to keep the line's scoring record out of the courtroom. ⚖️🤣\n\n⭐ THIRD STAR: ARUNEEEEEE PAUL!\nThird star goes to Aruneeeeee Paul, who turned in another great performance!\nAruneeee missed last week's game to support his wife, who needed a little extra love and care. And like any good teammate at home, he stepped up and came to the rescue!\nForget the power play — this man knows when to make the important plays off the ice, too! ❤️\nHe returned this week and showed that whether it's at home or on the rink, Aruneeee knows how to deliver when his team needs him!\n\n🎥 A BLOCKBUSTER NIGHT IN CHÂTEAUGUAY!\nAnother fantastic night in Châteauguay, with 2,500 tickets sold and TSN back on site for pre-game and post-game interviews.\nThe cameras were rolling, the goals were flying, the injury list was growing, and the rumours were apparently spreading faster than the puck!\nBetween White's late-game takeover, Shane Ford's five-point explosion, Pat Breeeeze's hot streak, Aruneeee's heroic return, and Bart's alleged five-star nursing experience, this game had absolutely everything.\n\nBlack came to play. White came to win. Bart apparently came for the hospital hospitality package. 💀😂\nUntil next week, keep your heads up, your sticks down, and for the love of hockey, stay away from the boards!\n🏒 THAT'S A WRAP FROM CHÂTEAUGUAY!\n\nThe 3 stars of the game were ,\n\n1. SHANE FORD\n2. Pat BriseBois\n3. Arune Paul\n\nThat's a wrap on this week's hockey report",
+      "pinned": false
+    },
     {
       "date": "Wed, Oct 21, 2026",
       "iso": "2026-10-21",
