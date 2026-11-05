@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-10-30T20:30:18Z",
+  "updated": "2026-11-05T21:49:23Z",
   "schedule": [
     {
       "week": "1",
@@ -1158,9 +1158,133 @@
           "a": 0
         }
       ]
+    },
+    {
+      "date": "Wed, Nov 4, 2026",
+      "iso": "2026-11-04",
+      "stats": [
+        {
+          "player": "Adam Porter",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Andy Skobin",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Arune Paul",
+          "g": 1,
+          "a": 2
+        },
+        {
+          "player": "Ben Levesque",
+          "g": 2,
+          "a": 2
+        },
+        {
+          "player": "Carter Howell",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Colby Larieviere",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Eric McDougal (G)",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Francis Chenevert",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Jarret Butler",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Jason Logan",
+          "g": 3,
+          "a": 0
+        },
+        {
+          "player": "Kevin Donnely",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Lorne Lucas",
+          "g": 2,
+          "a": 0
+        },
+        {
+          "player": "Marc Levesque",
+          "g": 2,
+          "a": 0
+        },
+        {
+          "player": "Mark Lucas",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Nick Montour",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Owen Larieviere",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Pat Brisebois",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Patrick Robertson (G)",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Shane Ford",
+          "g": 5,
+          "a": 2
+        },
+        {
+          "player": "Stephane Goyette",
+          "g": 1,
+          "a": 1
+        },
+        {
+          "player": "Sylvain Proulx",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Travis McCumber",
+          "g": 0,
+          "a": 0
+        }
+      ]
     }
   ],
   "news": [
+    {
+      "date": "Wed, Nov 4, 2026",
+      "iso": "2026-11-04",
+      "tag": "",
+      "title": "Nov 4th  (Week9)",
+      "body": "Game 2 – Black  4, White 6\nGame 1 – Black  3, White 6\n\nHOCKEY NIGHT IN CHÂTEAUGUAY\nWhat a night in Châteauguay! The White Team came out firing on all cylinders, sweeping both games and sending the Black Team home wondering if they should have brought a therapist, or a medical team or both! 😂\nTo their credit, the Black Team put up one heck of a fight. They battled hard, pushed the pace, and refused to go down without making the White Team earn it!\n\n🎥 TOP HIGHLIGHTS\n- THE PENALTY SHOT SHOW: Shane and Stéphane both stepped up for penalty shots! The pressure was on, the crowd was watching, and for a few seconds, everyone forgot this was supposed to be recreational hockey! 😂\n\n- FIRST STAR ⭐ SHANE: Stop us if you've heard this before... SHANE TAKES FIRST STAR AGAIN! At this point, we might as well just reserve the trophy and put his name on it before the game even starts. Is anyone going to challenge this man, or are we just playing for second place now? 🤣\n- SECOND STAR ⭐ LORNYYY MEEP MEEP: This week's award goes to Lornyyy Meep Meep! The human GPS is always finding open ice and making himself available for Marky. Left side? There he is. Right side? There he is. Behind the net? Somehow, STILL THERE! Marky doesn't even need to look anymore. Just throw the puck somewhere and trust that Meep Meep will magically appear! 🏎️💨\n\n🎙️ BETMANS FINAL WORD\nTwo wins for the White Team, a tremendous effort from the Black Team, and another night of questionable defensive decisions, questionable fitness levels, and questionable excuses at the end of the game.\nOne thing is certain: Shane is collecting stars, Meep Meep is collecting passes, and Marky is collecting assists (at least that's what he'll tell us).\n\nUntil next week, keep your heads up, your sticks down, and your excuses ready! 😂🏒\n\nThe 3 stars of the game were ,\n\n1. SHANE FORD\n2. Lorne Lucas\n3. Eric McDougal",
+      "pinned": false
+    },
     {
       "date": "Wed, Oct 28, 2026",
       "iso": "2026-10-28",
