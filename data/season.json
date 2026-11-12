@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-11-11T22:31:10Z",
+  "updated": "2026-11-12T22:07:26Z",
   "schedule": [
     {
       "week": "1",
@@ -1274,9 +1274,133 @@
           "a": 0
         }
       ]
+    },
+    {
+      "date": "Wed, Nov 11, 2026",
+      "iso": "2026-11-11",
+      "stats": [
+        {
+          "player": "Adam Porter",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Andy Skobin",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Arune Paul",
+          "g": 2,
+          "a": 0
+        },
+        {
+          "player": "Ben Levesque",
+          "g": 2,
+          "a": 2
+        },
+        {
+          "player": "Carter Howell",
+          "g": 3,
+          "a": 0
+        },
+        {
+          "player": "Eric McDougal (G)",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Francis Chenevert",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Jarret Butler",
+          "g": 2,
+          "a": 2
+        },
+        {
+          "player": "Jason Logan",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Lorne Lucas",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Marc Levesque",
+          "g": 3,
+          "a": 2
+        },
+        {
+          "player": "Mark Lucas",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Mark Massel",
+          "g": 2,
+          "a": 0
+        },
+        {
+          "player": "Mike Stacey",
+          "g": 0,
+          "a": 4
+        },
+        {
+          "player": "Nick Montour",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Pat Brisebois",
+          "g": 1,
+          "a": 1
+        },
+        {
+          "player": "Patrick Robertson (G)",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Shane Ford",
+          "g": 3,
+          "a": 1
+        },
+        {
+          "player": "Stephane Goyette",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Steve Diabo",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Sylvain Proulx",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Travis McCumber",
+          "g": 0,
+          "a": 0
+        }
+      ]
     }
   ],
   "news": [
+    {
+      "date": "Wed, Nov 11, 2026",
+      "iso": "2026-11-11",
+      "tag": "",
+      "title": "Nov 11th  (Week10)",
+      "body": "Game 1 – Black 5,  White 2\nGame 2 – White 7,  Black 4\n\n🏒 TSN HOCKEY NIGHT – LAST NIGHT'S RECAP!\n\nBREAKING NEWS PUCKS WERE FLYING!\nWell folks, another night of recreational hockey is in the books, and let's just say the boys brought the entertainment! Last night's action had everything: goals, questionable defensive decisions, questionable skating decisions, and probably a few guys wondering why they didn't choose bowling instead.\nThe intensity was REAL. Some players showed up ready for the Stanley Cup, while others looked like they were still looking for the dressing room.\n\n🔥 THE BIG STORYLINES\nOffensive superstars: A few guys were lighting the lamp like the electricity bill was already paid.\nDefensive breakdowns: Some defenders were apparently playing an invisible puck. We admire the creativity.\nThe veterans: Still proving they've got it. Although the post-game ice packs are becoming a little more expensive.\nThe excuses: The ice was bad, the stick was crooked, the puck bounced funny, and apparently somebody's skate lace was responsible for a loss. Classic.\n\n🎤 TSN POST-GAME REPORT\nOur reporters were on the scene collecting hard-hitting interviews and asking the important questions:\n\"How are the legs feeling?\"\n\"Did you actually mean to shoot that?\"\n\"And who exactly was supposed to cover that guy?\"\nUnfortunately, several players declined interviews due to mysterious lower-body injuries. All were later spotted walking perfectly fine toward the beer fridge.\nAbsolutely! We need the TSN three stars. Can't have a hockey broadcast without handing out some hardware! 😂\n\nTHREE STARS OF THE NIGHT\nFIRST STAR ⭐- THE ABSOLUTE STUD - Marky Birthday Boy Levesque (Hattrick)\nThe guy who couldn't miss last night! Pucks were finding the net, confidence was through the roof, and somewhere the opposing goalie was questioning his life choices. Someone check this guy for a performance-enhancing breakfast!\n\nSECOND STAR ⭐⭐ - THE PLAYMAKER - Mikee PullOver Stacey\nDishin' the sauce all night long! Making passes nobody else saw and collecting assists like they're loyalty points. Probably still telling everyone about his beautiful setup in the parking lot.\n\nTHIRD STAR ⭐⭐⭐ - THE GAME CHANGER - Carter Youngblood Howell (hattrick)\nA beauty performance from start to finish! Goals, effort, hustle and just enough swagger to make sure everyone noticed. The only thing missing was his own entrance music!\n\nHONOURABLE MENTION: To everyone else who showed up, survived the game, and managed to get out of bed this morning. You're all winners... except maybe the guy who missed the empty net. 😂\n\nFINAL WORD\nAnother fantastic night of hockey, a few bruised egos, some tired legs, and enough stories to keep the group chat going until next Thursday.\nREMEMBER BOYS: WHAT HAPPENS ON THE ICE STAYS ON THE ICE... UNLESS SOMEONE POSTS THE VIDEO!\n\nTHAT'S A WRAP, HOCKEY FANS!",
+      "pinned": false
+    },
     {
       "date": "Wed, Nov 4, 2026",
       "iso": "2026-11-04",
