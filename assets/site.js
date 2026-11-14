@@ -217,14 +217,27 @@
     return d.getFullYear() + '-' + (m < 10 ? '0' + m : m) + '-' + (day < 10 ? '0' + day : day);
   }
 
+  // Top 5 by total points (rows arrive sorted by points, then goals).
+  // Tied players share a rank and show as "T4".
+  var TOP_LEADERS = 5;
+
   function renderLeaders(rows) {
-    var g = CAHL.leader(rows, 'g'), a = CAHL.leader(rows, 'a'), p = CAHL.leader(rows, 'pts');
-    document.getElementById('goalName').textContent = g.name;
-    document.getElementById('goalVal').textContent = g.value;
-    document.getElementById('assistName').textContent = a.name;
-    document.getElementById('assistVal').textContent = a.value;
-    document.getElementById('pointName').textContent = p.name;
-    document.getElementById('pointVal').textContent = p.value;
+    var list = document.getElementById('topFive');
+    var top = rows.filter(function (r) { return r.pts > 0; }).slice(0, TOP_LEADERS);
+    if (!top.length) {
+      list.innerHTML = '<li class="top5-empty">No points recorded yet.</li>';
+      return;
+    }
+    list.innerHTML = top.map(function (p, i) {
+      var rank = 1 + rows.findIndex(function (r) { return r.pts === p.pts; });
+      var tied = rows.filter(function (r) { return r.pts === p.pts; }).length > 1;
+      var ppg = p.gp ? (p.pts / p.gp).toFixed(1) : '0.0';
+      return '<li class="top5-row rank-' + rank + '">' +
+        '<span class="top5-rank">' + (tied ? 'T' : '') + rank + '</span>' +
+        '<span class="top5-who"><b>' + esc(p.name) + '</b>' +
+        '<small>' + p.g + 'G · ' + p.a + 'A · ' + ppg + ' per game</small></span>' +
+        '<span class="top5-pts">' + p.pts + '<small>PTS</small></span></li>';
+    }).join('');
   }
 
   CAHL.loadSeason().then(function (season) {
