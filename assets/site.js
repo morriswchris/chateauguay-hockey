@@ -217,27 +217,64 @@
     return d.getFullYear() + '-' + (m < 10 ? '0' + m : m) + '-' + (day < 10 ? '0' + day : day);
   }
 
-  // Top 5 by total points (rows arrive sorted by points, then goals).
-  // Tied players share a rank and show as "T4".
+  // Top 5 by total points. Ties on points are broken by attendance and PPG:
+  //   1. players with at least 50% attendance (of games played so far) first;
+  //   2. among those, higher PPG wins (same points, fewer games);
+  //   3. among those below 50%, the one closest to the minimum wins.
+  // Players still level after that (same points AND same games) share a rank
+  // ("T4"). A tie at the cutoff shows up to MAX_EXTRA_TIES extra rows, then a
+  // "+N more tied" line.
   var TOP_LEADERS = 5;
+  var MAX_EXTRA_TIES = 2;
 
-  function renderLeaders(rows) {
+  function rankLeaders(rows, gamesPlayed) {
+    var minGp = Math.ceil(gamesPlayed / 2);
+    return rows.filter(function (r) { return r.pts > 0; }).sort(function (a, b) {
+      var aOk = a.gp >= minGp, bOk = b.gp >= minGp;
+      if (b.pts !== a.pts) return b.pts - a.pts;
+      if (aOk !== bOk) return aOk ? -1 : 1;
+      // Same points: above the minimum, fewer games = higher PPG; below it,
+      // more games = closer to the minimum.
+      if (a.gp !== b.gp) return aOk ? a.gp - b.gp : b.gp - a.gp;
+      return b.g - a.g || a.name.localeCompare(b.name);
+    });
+  }
+
+  function sameSpot(a, b) { return a.pts === b.pts && a.gp === b.gp; }
+
+  function renderLeaders(rows, season) {
     var list = document.getElementById('topFive');
-    var top = rows.filter(function (r) { return r.pts > 0; }).slice(0, TOP_LEADERS);
-    if (!top.length) {
+    var gamesPlayed = (season.games || []).filter(function (g) {
+      return (g.stats || []).length;
+    }).length;
+    var ranked = rankLeaders(rows, gamesPlayed);
+    if (!ranked.length) {
       list.innerHTML = '<li class="top5-empty">No points recorded yet.</li>';
       return;
     }
-    list.innerHTML = top.map(function (p, i) {
-      var rank = 1 + rows.findIndex(function (r) { return r.pts === p.pts; });
-      var tied = rows.filter(function (r) { return r.pts === p.pts; }).length > 1;
+
+    // Extend past the cutoff for players tied with the last one shown.
+    var cutoff = ranked[Math.min(TOP_LEADERS, ranked.length) - 1];
+    var shown = Math.min(TOP_LEADERS, ranked.length);
+    while (shown < ranked.length && shown < TOP_LEADERS + MAX_EXTRA_TIES &&
+           sameSpot(ranked[shown], cutoff)) shown++;
+    var hidden = 0;
+    while (shown + hidden < ranked.length && sameSpot(ranked[shown + hidden], cutoff)) hidden++;
+
+    list.innerHTML = ranked.slice(0, shown).map(function (p, i) {
+      var first = i;
+      while (first > 0 && sameSpot(ranked[first - 1], p)) first--;
+      var rank = first + 1;
+      var tied = first !== i || (ranked[i + 1] && sameSpot(ranked[i + 1], p));
       var ppg = p.gp ? (p.pts / p.gp).toFixed(1) : '0.0';
       return '<li class="top5-row rank-' + rank + '">' +
         '<span class="top5-rank">' + (tied ? 'T' : '') + rank + '</span>' +
         '<span class="top5-who"><b>' + esc(p.name) + '</b>' +
         '<small>' + p.g + 'G · ' + p.a + 'A · ' + ppg + ' PPG (' + p.gp + ' GP)</small></span>' +
         '<span class="top5-pts">' + p.pts + '<small>PTS</small></span></li>';
-    }).join('');
+    }).join('') + (hidden
+      ? '<li class="top5-more">+' + hidden + ' more tied at ' + cutoff.pts + ' PTS</li>'
+      : '');
   }
 
   CAHL.loadSeason().then(function (season) {
@@ -252,7 +289,7 @@
     renderNews(season);
     var rows = CAHL.aggregate(season);
     renderStats(rows);
-    renderLeaders(rows);
+    renderLeaders(rows, season);
   }).catch(function (err) {
     document.getElementById('nextGame').querySelector('.game-details').innerHTML =
       '<strong>Could not load league data.</strong>';
