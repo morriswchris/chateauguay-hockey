@@ -53,11 +53,10 @@
     </section>
 
     <section class="panel">
-      <div class="panel-head">League Leaders</div>
-      <div class="panel-body leader-grid">
-        <div class="leader-card"><div class="title">GOALS</div><div class="sil"></div><div class="name" id="goalName">—</div><div class="stat" id="goalVal">0</div><small>GOALS</small></div>
-        <div class="leader-card"><div class="title">ASSISTS</div><div class="sil"></div><div class="name" id="assistName">—</div><div class="stat" id="assistVal">0</div><small>ASSISTS</small></div>
-        <div class="leader-card"><div class="title">POINTS</div><div class="sil"></div><div class="name" id="pointName">—</div><div class="stat" id="pointVal">0</div><small>POINTS</small></div>
+      <div class="panel-head">League Leaders <span class="head-sub">Top 5 Points</span></div>
+      <div class="panel-body">
+        <ol class="top5" id="topFive"><li class="top5-empty">Loading…</li></ol>
+        <p class="top5-note">Ties broken by higher PPG, for players with 50%+ attendance.</p>
       </div>
     </section>
   </div>
