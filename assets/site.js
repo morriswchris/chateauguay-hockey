@@ -235,7 +235,7 @@
       return '<li class="top5-row rank-' + rank + '">' +
         '<span class="top5-rank">' + (tied ? 'T' : '') + rank + '</span>' +
         '<span class="top5-who"><b>' + esc(p.name) + '</b>' +
-        '<small>' + p.g + 'G · ' + p.a + 'A · ' + ppg + ' per game</small></span>' +
+        '<small>' + p.g + 'G · ' + p.a + 'A · ' + ppg + ' PPG (' + p.gp + ' GP)</small></span>' +
         '<span class="top5-pts">' + p.pts + '<small>PTS</small></span></li>';
     }).join('');
   }
