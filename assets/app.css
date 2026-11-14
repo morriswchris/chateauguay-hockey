@@ -104,15 +104,14 @@ body{
 .top5{list-style:none;margin:0;padding:0}
 .top5-row{display:grid;grid-template-columns:40px 1fr auto;gap:12px;align-items:center;padding:9px 6px;border-bottom:1px solid #d6dfe5}
 .top5-row:last-child{border-bottom:none}
-.top5-rank{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:14px;background:#dde8ef;color:var(--navy)}
-.top5-row.rank-1 .top5-rank{background:var(--gold);color:#3b2a00}
-.top5-row.rank-2 .top5-rank{background:#c3ccd4;color:#1f2b36}
-.top5-row.rank-3 .top5-rank{background:#c9874a;color:white}
+.top5-rank{width:34px;height:34px;box-sizing:border-box;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:14px;border:2px solid var(--navy2);color:var(--navy2)}
+/* Leader: solid navy badge, ice-blue row, red stripe on the left. */
+.top5-row.rank-1{background:var(--ice);border-left:5px solid var(--red);border-radius:6px}
+.top5-row.rank-1 .top5-rank{background:var(--navy2);color:white}
 .top5-who b{display:block;font-size:16px}
 .top5-who small{color:#557086;font-size:12px}
 .top5-pts{font-size:28px;font-weight:900;color:#d6171e;line-height:1;text-align:right}
 .top5-pts small{display:block;font-size:10px;color:#557086;letter-spacing:1px}
-.top5-row.rank-1{background:#fff8e1;border-radius:8px}
 .top5-empty{padding:12px;color:#557086}
 .content-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:14px;margin-top:14px}
 .table-wrap{overflow:auto}
