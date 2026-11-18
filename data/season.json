@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-11-12T22:07:26Z",
+  "updated": "2026-11-18T22:52:27Z",
   "schedule": [
     {
       "week": "1",
@@ -886,6 +886,11 @@
           "a": 2
         },
         {
+          "player": "Owen Lavalliere",
+          "g": 0,
+          "a": 0
+        },
+        {
           "player": "Pat Brisebois",
           "g": 2,
           "a": 2
@@ -919,11 +924,6 @@
           "player": "Travis McCumber",
           "g": 0,
           "a": 0
-        },
-        {
-          "player": "Wifi Lariviere",
-          "g": 0,
-          "a": 0
         }
       ]
     },
@@ -947,7 +947,7 @@
           "a": 0
         },
         {
-          "player": "Coby Larieviere",
+          "player": "Coby Lavalliere",
           "g": 2,
           "a": 1
         },
@@ -997,7 +997,7 @@
           "a": 1
         },
         {
-          "player": "Owen Lariviere",
+          "player": "Owen Lavalliere",
           "g": 0,
           "a": 1
         },
@@ -1189,7 +1189,7 @@
           "a": 0
         },
         {
-          "player": "Coby Larieviere",
+          "player": "Coby Lavalliere",
           "g": 0,
           "a": 1
         },
@@ -1239,7 +1239,7 @@
           "a": 1
         },
         {
-          "player": "Owen Lariviere",
+          "player": "Owen Lavalliere",
           "g": 0,
           "a": 0
         },
