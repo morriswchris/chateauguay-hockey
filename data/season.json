@@ -4,7 +4,7 @@
   "shortName": "CAHL",
   "defaultRink": "Kim St-Pierre Arena",
   "source": "google-sheet",
-  "updated": "2026-11-18T22:52:27Z",
+  "updated": "2026-11-19T22:56:33Z",
   "schedule": [
     {
       "week": "1",
@@ -1390,15 +1390,139 @@
           "a": 0
         }
       ]
+    },
+    {
+      "date": "Wed, Nov 18, 2026",
+      "iso": "2026-11-18",
+      "stats": [
+        {
+          "player": "Adam Porter",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Andy Skobin",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Arune Paul",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Ben Levesque",
+          "g": 6,
+          "a": 1
+        },
+        {
+          "player": "Carter Howell",
+          "g": 2,
+          "a": 5
+        },
+        {
+          "player": "Eric McDougal (G)",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Jarret Butler",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Kevin Donnely",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Lavalliere Coby",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Lorne Lucas",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Marc Levesque",
+          "g": 1,
+          "a": 2
+        },
+        {
+          "player": "Mark Lucas",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Mark Massel",
+          "g": 1,
+          "a": 0
+        },
+        {
+          "player": "Mike Stacey",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Owen Lavalliere",
+          "g": 3,
+          "a": 0
+        },
+        {
+          "player": "Pat Brisebois",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Patrick Robertson (G)",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Scott Howell",
+          "g": 0,
+          "a": 0
+        },
+        {
+          "player": "Shane Ford",
+          "g": 2,
+          "a": 2
+        },
+        {
+          "player": "Stephane Goyette",
+          "g": 0,
+          "a": 1
+        },
+        {
+          "player": "Steve Diabo",
+          "g": 0,
+          "a": 2
+        },
+        {
+          "player": "Travis McCumber",
+          "g": 2,
+          "a": 2
+        }
+      ]
     }
   ],
   "news": [
+    {
+      "date": "Wed, Nov 18, 2026",
+      "iso": "2026-11-18",
+      "tag": "",
+      "title": "Nov 18th  (Week11)",
+      "body": "Game 1 – Black 5,  White 2\nGame 2 – White 7,  Black 4\n\n🏒 TSN HOCKEY NIGHT – LAST NIGHT'S RECAP!\n\nBREAKING NEWS PUCKS WERE FLYING!\nWell folks, another night of recreational hockey is in the books, and let's just say the boys brought the entertainment! Last night's action had everything: goals, questionable defensive decisions, questionable skating decisions, and probably a few guys wondering why they didn't choose bowling instead.\nThe intensity was REAL. Some players showed up ready for the Stanley Cup, while others looked like they were still looking for the dressing room.\n\n🔥 THE BIG STORYLINES\nOffensive superstars: A few guys were lighting the lamp like the electricity bill was already paid.\nDefensive breakdowns: Some defenders were apparently playing an invisible puck. We admire the creativity.\nThe veterans: Still proving they've got it. Although the post-game ice packs are becoming a little more expensive.\nThe excuses: The ice was bad, the stick was crooked, the puck bounced funny, and apparently somebody's skate lace was responsible for a loss. Classic.\n\n🎤 TSN POST-GAME REPORT\nOur reporters were on the scene collecting hard-hitting interviews and asking the important questions:\n\"How are the legs feeling?\"\n\"Did you actually mean to shoot that?\"\n\"And who exactly was supposed to cover that guy?\"\nUnfortunately, several players declined interviews due to mysterious lower-body injuries. All were later spotted walking perfectly fine toward the beer fridge.\nAbsolutely! We need the TSN three stars. Can't have a hockey broadcast without handing out some hardware! 😂\n\nTHREE STARS OF THE NIGHT\nFIRST STAR ⭐- THE ABSOLUTE STUD - Marky Birthday Boy Levesque (Hattrick)\nThe guy who couldn't miss last night! Pucks were finding the net, confidence was through the roof, and somewhere the opposing goalie was questioning his life choices. Someone check this guy for a performance-enhancing breakfast!\n\nSECOND STAR ⭐⭐ - THE PLAYMAKER - Mikee PullOver Stacey\nDishin' the sauce all night long! Making passes nobody else saw and collecting assists like they're loyalty points. Probably still telling everyone about his beautiful setup in the parking lot.\n\nTHIRD STAR ⭐⭐⭐ - THE GAME CHANGER - Carter Youngblood Howell (hattrick)\nA beauty performance from start to finish! Goals, effort, hustle and just enough swagger to make sure everyone noticed. The only thing missing was his own entrance music!\n\nHONOURABLE MENTION: To everyone else who showed up, survived the game, and managed to get out of bed this morning. You're all winners... except maybe the guy who missed the empty net. 😂\n\nFINAL WORD\nAnother fantastic night of hockey, a few bruised egos, some tired legs, and enough stories to keep the group chat going until next Thursday.\nREMEMBER BOYS: WHAT HAPPENS ON THE ICE STAYS ON THE ICE... UNLESS SOMEONE POSTS THE VIDEO!\n\nTHAT'S A WRAP, HOCKEY FANS!",
+      "pinned": false
+    },
     {
       "date": "Wed, Nov 11, 2026",
       "iso": "2026-11-11",
       "tag": "",
       "title": "Nov 11th  (Week10)",
-      "body": "Game 1 – Black 5,  White 2\nGame 2 – White 7,  Black 4\n\n🏒 TSN HOCKEY NIGHT – LAST NIGHT'S RECAP!\n\nBREAKING NEWS PUCKS WERE FLYING!\nWell folks, another night of recreational hockey is in the books, and let's just say the boys brought the entertainment! Last night's action had everything: goals, questionable defensive decisions, questionable skating decisions, and probably a few guys wondering why they didn't choose bowling instead.\nThe intensity was REAL. Some players showed up ready for the Stanley Cup, while others looked like they were still looking for the dressing room.\n\n🔥 THE BIG STORYLINES\nOffensive superstars: A few guys were lighting the lamp like the electricity bill was already paid.\nDefensive breakdowns: Some defenders were apparently playing an invisible puck. We admire the creativity.\nThe veterans: Still proving they've got it. Although the post-game ice packs are becoming a little more expensive.\nThe excuses: The ice was bad, the stick was crooked, the puck bounced funny, and apparently somebody's skate lace was responsible for a loss. Classic.\n\n🎤 TSN POST-GAME REPORT\nOur reporters were on the scene collecting hard-hitting interviews and asking the important questions:\n\"How are the legs feeling?\"\n\"Did you actually mean to shoot that?\"\n\"And who exactly was supposed to cover that guy?\"\nUnfortunately, several players declined interviews due to mysterious lower-body injuries. All were later spotted walking perfectly fine toward the beer fridge.\nAbsolutely! We need the TSN three stars. Can't have a hockey broadcast without handing out some hardware! 😂\n\nTHREE STARS OF THE NIGHT\nFIRST STAR ⭐- THE ABSOLUTE STUD - Marky Birthday Boy Levesque (Hattrick)\nThe guy who couldn't miss last night! Pucks were finding the net, confidence was through the roof, and somewhere the opposing goalie was questioning his life choices. Someone check this guy for a performance-enhancing breakfast!\n\nSECOND STAR ⭐⭐ - THE PLAYMAKER - Mikee PullOver Stacey\nDishin' the sauce all night long! Making passes nobody else saw and collecting assists like they're loyalty points. Probably still telling everyone about his beautiful setup in the parking lot.\n\nTHIRD STAR ⭐⭐⭐ - THE GAME CHANGER - Carter Youngblood Howell (hattrick)\nA beauty performance from start to finish! Goals, effort, hustle and just enough swagger to make sure everyone noticed. The only thing missing was his own entrance music!\n\nHONOURABLE MENTION: To everyone else who showed up, survived the game, and managed to get out of bed this morning. You're all winners... except maybe the guy who missed the empty net. 😂\n\nFINAL WORD\nAnother fantastic night of hockey, a few bruised egos, some tired legs, and enough stories to keep the group chat going until next Thursday.\nREMEMBER BOYS: WHAT HAPPENS ON THE ICE STAYS ON THE ICE... UNLESS SOMEONE POSTS THE VIDEO!\n\nTHAT'S A WRAP, HOCKEY FANS!",
+      "body": "Game 1 – White 5, Black 3\nGame 2 – White 6, Black 5\n\nChateauguay Hockey Last night: TEAM WHITE SWEEPS THE NIGHT! BLACK LEFT LOOKING FOR ANSWERS!\n\nBREAKING NEWS • DRESSING ROOM REPORT • FULL CONTACT COMEDY\nGood evening, hockey fans! We have breaking news from the rink, where Team White has officially taken care of business, walking away with TWO BIG WINS while Team Black is left wondering if they should be calling their insurance company or their therapists!\nIt was a night filled with goals, highlight-reel saves, questionable passing decisions, penalty shot heartbreaks, and one player who may have discovered a new career in massage therapy!\nLet's get right to the highlights!\n\nTHE THREE STARS OF THE NIGHT\n\nFIRST STAR: BENNY – TEAM BLACK\nSomebody check Benny for illegal equipment because this guy was absolutely ridiculous! A DOUBLE HAT TRICK! That's SIX GOALS! The goalie was probably seeing Benny in his sleep last night. What a performance!\n\nSECOND STAR: CARTER \"YOUNGBLOOD\" – TEAM WHITE\nFive assists and two goals! Seven points! Carter was handing out assists like Oprah handing out cars. Everybody gets a goal! Everybody gets a goal! What a night!\n\nTHIRD STAR: TRAVEEEEE McCUMBER - – TEAM WHITE\nTwo goals and two assists! Traveeeee was everywhere. Team Black may want to check their security footage because this guy was stealing the show!\n\nSAVE OF THE NIGHT: SUPERMAN DOES IT AGAIN!\nEric \"SUPERMAN\" McDougal delivered a HUGE save late in the third period while on team black. With Team White clinging to the lead, Superman came flying to the rescue! Somewhere, a phone booth was probably missing its favourite customer.\nTeam White fans can breathe easy. The cape was definitely on!\n\nMEEP MEEP! LORNEEEE GETS HIS CHANCE!\nWith just 30 seconds left in the second game and Team White holding a 6-5 lead, Team Black's Lorneeee \"Meep Meep\" was awarded a penalty shot!\nThis was it! The moment! The opportunity! The chance to become a Team Black legend!\nUnfortunately, the Roadrunner ran out of road, it was Pat the Rat Robertson and his huge blocker stop.\nHe couldn't find the back of the net, and Team White escaped with the victory. Somewhere, Wile E. Coyote was shaking his head!\n\nTHE WIFI BROTHERS FINALLY GET CONNECTED!\nIt was a family affair last night!\nYoung Coby has been showing off the speed, the moves, and the fancy footwork lately. Unfortunately, the puck has been treating him like a blocked WiFi signal.\nBut last night, HE FINALLY CONNECTED! Coby buried one as Team Black was desperately trying to tie the second game.\nMeanwhile, big brother Owen decided he wasn't going to let the younger generation steal all the attention.\nPlaying alongside Carter Youngblood on team white, Owen locked in a HAT TRICK!\nThree goals! Somebody call the internet provider because the WiFi brothers were broadcasting in 4K last night!\n\nBREAKING: HOTTIEE SCOTTY HEADS TO THE MEDICAL ROOM!\nIn unfortunate news, Hottiee Scotty colided into big Coby Wifi1 midway through the first game and appeared to injure his rib cage.\nScotty was forced to leave the game and headed back to the room to seek some much-needed treatment.\nSources tell TSN he was reportedly searching for the erotic massage ladies to help work out the kinks!\nWe can't confirm whether the treatment was covered by his insurance plan, but we certainly hope the recovery is quick!\nAll kidding aside, get well soon, Scotty! We need you back as soon as possible!\n\nMISSING PERSONS REPORT\nA few regular suspects were nowhere to be found last night:\nMattyyy Rheault – Last seen in an out of the courtrooms.\nBig Shawn Blenman – Possibly still looking for his hockey bag.\nSlick Nick Montour – Too slick to be located!\nTSN has launched an investigation. Anyone with information is encouraged to contact the dressing room immediately. Hopefully, all three return next week!\n\nMIKEEEE PULLOVER: SECRET AGENT FOR TEAM WHITE?\nTeam Black's Mikeeee \"PullOver\" Stacey came ready to play, but TSN's investigative team has some serious questions.\nHis passing to Team White was absolutely BEAUTIFUL! Perfectly placed passes, great vision, unbelievable execution.\nThe only problem? HE WAS PASSING TO THE WRONG TEAM!\nWe're not saying he's a double agent, but Team White may want to start collecting his jersey dues!\n\nANOTHER PENALTY SHOT GOES MISSING!\nTeam White's Stephane \"Roadrunner\" Goyette also got his opportunity from the penalty shot spot.\nUnfortunately, the result wasn't much better than Lorneeee's attempt.\nTwo penalty shots, two missed opportunities, and two goalies sleeping very well tonight!\nTSN's official recommendation: Maybe practise those breakaways before next week's games!\n\nTSN ON LOCATION!\nOur TSN broadcasting crew was back onsite capturing pre-game and post-game interviews.\nThe cameras were rolling, the microphones were hot, and we're pretty sure a few players were already practising their excuses before the interviews even started!\nMake sure to check out the VIDEO SECTION to watch all the interviews. Some of the answers may be more entertaining than the actual hockey!\n\nFINAL SCORE: TEAM WHITE TAKES BOTH!\nTEAM WHITE with wins UNDEFEATED ON THE NIGHT!\nThat's a wrap from TSN Hockey Tonight!\nTeam White takes both games, Benny scores six, Carter dishes out assists like Christmas presents, Owen gets a hat trick, Superman saves the day, and Mikeeee may need to attend a Team Black loyalty meeting!\n\nAnother legendary night at the rink!\nUntil next week, keep your heads up, your sticks on the ice. \n\nThe 3 stars of the game were ,\n1. Ben Levesque\n2. Carter Howell\n3. Travis McCumber\nThat's a wrap on this week's hockey report",
       "pinned": false
     },
     {
